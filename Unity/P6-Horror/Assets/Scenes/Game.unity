@@ -179,6 +179,158 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &275525108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275525110}
+  - component: {fileID: 275525109}
+  m_Layer: 0
+  m_Name: Notebook Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &275525109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275525108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ff5488062113846aa873cae32d95fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notebooks:
+  - "5th of April 1981, Crystal Lake \u2013 New Jersey\r\nMother and I just moved
+    into the new house. I understand it wasn\u2019t cheap, but now that I am here
+    it feels like we got our money\u2019s worth. The house is amazing, just standing
+    in the hallway and looking around gives the immediate impression of comfort. It\u2019s
+    a bit out of the way of the town itself since it is built in the forest. But we
+    like the peace and quiet. That and my mom has more space to put her dolls on display,
+    I don\u2019t like them but hey, she does.\r\n \r\nWe still have some work to do,
+    unpack get all the furniture in place and look around to find the lake that the
+    real estate agent told us was in the area. If it is close enough I think I\u2019ll
+    go for a swim every now and then. Maybe I\u2019ll even see if we can restore the
+    small woodland hut there, that would make for a great spot just for me. It\u2019s
+    mostly intact, just needs some new stuff for inside and some patching for weak
+    spots.\r\n \r\nFor now it\u2019s back to work, and tomorrow our new life begins.\r"
+  - "26th of April 1981, Crystal Lake \u2013 New Jersey\r\nThis is the life! No one
+    to bother me, mother lets me do what I want. Mostly at least. And with classes
+    ending a month from now and mother going away for work by then I\u2019ll have
+    to place to myself.\r\n \r\nI think I\u2019ll throw a party during summer break,
+    with a bit of luck Jenny will come and I can show her the lake and my hut. I\u2019m
+    sure she\u2019ll like that. Robby can cover for me here and run the party while
+    we are gone. This summer is when I make Jenny mine.\r"
+  - "18th of May 1981, Crystal Lake \u2013 New Jersey\r\nPreparations are going well,
+    Robby is going to wingman and cover while I take Jenny to the lake. Martin is
+    going to bring plenty of Booze and Therisa managed to get a bunch of food on the
+    cheap. Everyone is going to bring stuff so we have a good time and by the end
+    I am going to be a very lucky man indeed.\r\n \r\nNow to set up my hut to be a
+    bit more romantic. I\u2019ve got a few candles, beer, wine and a few snacks. The
+    bed is all set up. Now I wait for summer and for Jenny to follow me there. This
+    will be a story to tell.\r\n"
+  - "3rd of June 1981, Crystal Lake \u2013 New Jersey\r\nRobby is going to be here
+    in an hour, the others should get here not too long after him. I don\u2019t really
+    care about who does and doesn\u2019t show though, for me this is a way to get
+    alone time with Jenny.\r\n \r\n4th of June 1981, Crystal Lake \u2013 New Jersey\r\nWell,
+    everyone has left and the house is just mine again. Mine and Jenny\u2019s! We
+    went steady and I did indeed get lucky. Yesterday was the best day of my life,
+    and nothing could ever ruin this. In a few days my mom comes back so I\u2019ll
+    have to explain why Jenny is going to be here regularly, but that should be fine,
+    it\u2019s not like she has ever said no before.."
+  - "11th of June 1981, Crystal Lake \u2013 New Jersey\r\nMother will come home today,
+    so I am cleaning up. No need for her to know about the party. Jenny went home,
+    I\u2019ll introduce them later. Of course Jenny knows about my mother already
+    but I don\u2019t want to just have my mother come home to the two of us out of
+    nowhere.\r\n \r\n13th of June 1981, Crystal Lake \u2013 New Jersey\r\nMother hasn\u2019t
+    come home yet. At first I thought she got held up somewhere, but this is taking
+    too long. She isn\u2019t the type to show up late without informing someone, and
+    there hasn\u2019t been a phone call or anything. I just hope nothing bad has happened
+    to her.\r\n"
+  - "15th of June 1981, Crystal Lake \u2013 New Jersey\r\nI\u2019m worried now, I
+    haven\u2019t heard anything about mother yet. I went to the police station and
+    filed a missing person report. They said she likely just forgot to keep track
+    of time shopping for dolls or something. (Yes my mother likes to collect dolls,
+    I don\u2019t know why either, she just does.)\r\n \r\nAt first I thought that
+    was the case too but it has been three days already, she is never this late. Even
+    if she was shopping for dolls one day and a flight got cancelled the next, that
+    means she should have been here already\u2026 right?\r\n"
+  - "16th of June 1981, Crystal Lake \u2013 New Jersey\r\nA man showed up at the front
+    door today, I had hoped it was mother ringing the bell but no. He asked me if
+    he could come in, he looked like an official of sorts so I asked him if he had
+    some sort of ID. He showed me an FBI badge.\r\n \r\nI didn\u2019t want to admit
+    it, but this is where I already knew something was wrong and that mother probably
+    wasn\u2019t coming home. Turns out I was right. The man told me that my mother
+    had vanished between the 12th and the 14th. I didn\u2019t know what to say, I
+    still don\u2019t. Right now I\u2019m just writing this down in hopes of coming
+    to turns with it. It feels so unreal\u2026 you know?\r\n \r\nBut I guess I\u2019ll
+    have to take care of myself from now on. The man told me the house and everything
+    else would be left to me, so at least I have somewhere to sleep but I don\u2019t
+    know how long I\u2019ll last, I don\u2019t have a job and I haven\u2019t finished
+    college either. I tried calling Jenny but she isn\u2019t answering the phone.
+    I\u2019m going to bed, maybe this will turn out to be a bad dream.\r\n"
+  - "17th of June 1981, Crystal Lake \u2013 New Jersey\r\nIt was not a dream. I woke
+    up today and I found a letter in the mailbox. The official documents declaring
+    my mother dead, and me her sole heir.\r\n\r\n20th of June 1981, Crystal Lake \u2013
+    New Jersey\r\nIt doesn\u2019t feel right. My mother should be here with me. But
+    that is not all that feels wrong, the man that told me the information, finding
+    the documents in my mailbox rather than getting them officially, hearing nothing
+    from my mom while she was away, all these things feel wrong. Something here is
+    wrong, and I plan to find out what. I\u2019ll look into this and trace my mother\u2019s
+    steps, maybe then I\u2019ll find out what happened.\r\n"
+  - "23rd of July 1981, Crystal Lake \u2013 New Jersey\r\nI\u2019ve traced my mother\u2019s
+    steps for some time now and all I know for sure is that she never really left
+    to begin with. There was no record of her ever getting on her plane. There are
+    only two things that I ran into regularly, her obsession with dolls which seems
+    to have been worse than I ever thought it was, and the lake. I don\u2019t know
+    when, but apparently she got really interested in it before we moved here. Maybe
+    there was more to us going here than just the peace and quiet, the people she
+    worked with say she didn\u2019t talk about anything other than the lake. They
+    also mentioned she wanted to go and see what was in it. I don\u2019t know what
+    she was thinking, but I\u2019m going to the lake to see just what happened to
+    her there.\r\n \r\n25th of July 1981, Crystal Lake \u2013 New Jersey\r\nYesterday
+    was weird and unsettling. The man who told me my mother was gone knocked on the
+    door again, just as I wanted to head out to the lake. He told me they found out
+    what happened, she had drowned there and her body was being prepared for the funeral.\r\n
+    \r\nBy now I don\u2019t trust him anymore, why does he appear now? How did they
+    suddenly just find her when they first said she vanished in another country which
+    she never went to? Why do they know what she told me when she didn\u2019t tell
+    anyone else?\r\nI can only think of one thing, they are somehow involved, they
+    are behind this. It is all their fault.\r\n"
+  - "???\r\nThey are behind everything, the dolls, the lake, my mother. They caused
+    it all. If you read this then burn it out of your head or they\u2019ll come for
+    you to. I got my mother from the lake, she is fine now though she eats very little.
+    We will make this right, our business isn\u2019t finished until this is all made
+    right. Make it right you! They know, they will come. They always come. They will
+    make it wrong, but we make it right. So they come and we make right. Make it right
+    before they come or they will make it wrong. I will not rest until it is right.
+    Mother won\u2019t rest until it is right. You won\u2019t rest until it is right.
+    No one will rest until it is right. Make it right. All must be right. Must make
+    it right.\r\n"
+  fonts:
+  - {fileID: 12800000, guid: 5120d37e46cbd6e41b2bf5f1d9ee6fe3, type: 3}
+  - {fileID: 12800000, guid: 53360b8834fd2124e8c8cf34e39da4fc, type: 3}
+  - {fileID: 12800000, guid: 9197741dbb7442642af6ae3ab2759b4c, type: 3}
+  text: {fileID: 2136227055}
+--- !u!4 &275525110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275525108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395488320
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +689,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5120d37e46cbd6e41b2bf5f1d9ee6fe3, type: 3}
+    m_Font: {fileID: 12800000, guid: 53360b8834fd2124e8c8cf34e39da4fc, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 1

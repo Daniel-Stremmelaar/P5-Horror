@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 62d05e1d3f41c2e47a8fc7b9902f97bd
+guid: 9197741dbb7442642af6ae3ab2759b4c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Badtaste DEMO
+  fontName: Radicalis
   fontNames:
-  - Badtaste DEMO
+  - Radicalis
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
