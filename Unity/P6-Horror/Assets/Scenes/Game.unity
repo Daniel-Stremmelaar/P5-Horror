@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -305,7 +305,7 @@ MonoBehaviour:
     are behind this. It is all their fault.\r\n"
   - "???\r\nThey are behind everything, the dolls, the lake, my mother. They caused
     it all. If you read this then burn it out of your head or they\u2019ll come for
-    you to. I got my mother from the lake, she is fine now though she eats very little.
+    you too. I got my mother from the lake, she is fine now though she eats very little.
     We will make this right, our business isn\u2019t finished until this is all made
     right. Make it right you! They know, they will come. They always come. They will
     make it wrong, but we make it right. So they come and we make right. Make it right
@@ -318,6 +318,19 @@ MonoBehaviour:
   - {fileID: 12800000, guid: 53360b8834fd2124e8c8cf34e39da4fc, type: 3}
   - {fileID: 12800000, guid: 9197741dbb7442642af6ae3ab2759b4c, type: 3}
   text: {fileID: 2136227055}
+  months:
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December
 --- !u!4 &275525110
 Transform:
   m_ObjectHideFlags: 0
