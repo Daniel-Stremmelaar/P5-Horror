@@ -54,7 +54,7 @@ public class NotebookManager : MonoBehaviour {
     public void SetFont(int n)
     {
         text.font = fonts[n];
-        text.fontStyle = FontStyle.Italic;
+        text.fontStyle = FontStyle.BoldAndItalic;
     }
 
     public void SetDate()
