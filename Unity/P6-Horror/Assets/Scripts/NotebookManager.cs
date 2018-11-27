@@ -93,7 +93,7 @@ public class NotebookManager : MonoBehaviour {
         }
         if (day > 3)
         {
-            s = correction.ToString() + (correction / 10).ToString() + day.ToString() + "th of ";
+            s = (correction / 10).ToString() + day.ToString() + "th of ";
         }
 
         //set month text
