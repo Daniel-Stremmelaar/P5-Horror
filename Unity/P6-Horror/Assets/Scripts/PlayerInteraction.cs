@@ -31,5 +31,9 @@ public class PlayerInteraction : MonoBehaviour {
                 interactDisplay.SetActive(false);
             }
         }
+        else
+        {
+            interactDisplay.SetActive(false);
+        }
 	}
 }
