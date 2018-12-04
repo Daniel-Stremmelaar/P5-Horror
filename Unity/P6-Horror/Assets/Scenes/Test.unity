@@ -393,7 +393,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4507609987028834, guid: 5f5f364ed0e47a4418a2cba5fe2fb06c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.7019039
+      value: 1.298
       objectReference: {fileID: 0}
     - target: {fileID: 4507609987028834, guid: 5f5f364ed0e47a4418a2cba5fe2fb06c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -401,7 +401,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507609987028834, guid: 5f5f364ed0e47a4418a2cba5fe2fb06c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.98
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 4507609987028834, guid: 5f5f364ed0e47a4418a2cba5fe2fb06c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 1708864516}
   - component: {fileID: 1708864515}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Subtitels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
