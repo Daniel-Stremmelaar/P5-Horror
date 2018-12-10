@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBehavior : MonoBehaviour {
+public class EnemyBehavior : MonoBehaviour
+{
 
     public float detectionDistance;
     public float detectionAngle;
@@ -15,6 +16,7 @@ public class EnemyBehavior : MonoBehaviour {
     private bool lost;
     private Vector3 lastKnown;
 
+    public GameObject tempTarget;
     public Transform target;
     public List<Transform> targetList = new List<Transform>();
     private NavMeshAgent agent;
@@ -22,22 +24,24 @@ public class EnemyBehavior : MonoBehaviour {
     private enum action { wander, scan, hunt, search };
     private action current;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         agent = GetComponent<NavMeshAgent>();
         SelectTarget();
         print(targetList.Count);
         lost = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         Vision();
-		switch (current)
+        switch (current)
         {
             case action.wander:
                 //behavior here
-                if(transform.position.z == target.position.z && transform.position.x == target.position.x)
+                if (transform.position.z == target.position.z && transform.position.x == target.position.x)
                 {
                     current = action.scan;
                 }
@@ -50,7 +54,7 @@ public class EnemyBehavior : MonoBehaviour {
 
             case action.hunt:
                 //behavior here
-                if(lost == true)
+                if (lost == true)
                 {
                     current = action.search;
                 }
@@ -58,14 +62,15 @@ public class EnemyBehavior : MonoBehaviour {
 
             case action.search:
                 //behavior here
-                target.position = lastKnown;
+                target = Instantiate(tempTarget, lastKnown, Quaternion.identity).transform;
+                agent.destination = target.position;
                 if (transform.position.z == target.position.z && transform.position.x == target.position.x)
                 {
                     current = action.scan;
                 }
                 break;
         }
-	}
+    }
 
     private void Vision()
     {
@@ -73,9 +78,9 @@ public class EnemyBehavior : MonoBehaviour {
         playerDistance = Mathf.Sqrt(Mathf.Pow((player.position.z - transform.position.z), 2) + Mathf.Pow((player.position.x - transform.position.x), 2));
         playerAngle = Vector3.Angle(playerDirection, transform.forward);
         Debug.DrawRay(transform.position, playerDirection);
-        if(playerAngle <= detectionAngle && playerDistance <= detectionDistance && Physics.Raycast(transform.position, playerDirection, out hit, detectionDistance))
+        if (playerAngle <= detectionAngle && playerDistance <= detectionDistance && Physics.Raycast(transform.position, playerDirection, out hit, detectionDistance))
         {
-            if(hit.transform.gameObject.tag == "Player")
+            if (hit.transform.gameObject.tag == "Player")
             {
                 lost = false;
                 target = player;
@@ -86,7 +91,14 @@ public class EnemyBehavior : MonoBehaviour {
             {
                 lost = true;
                 lastKnown = player.position;
+                //current = action.search;
             }
+        }
+        else
+        {
+            lost = true;
+            lastKnown = player.position;
+            //current = action.search;
         }
     }
 
