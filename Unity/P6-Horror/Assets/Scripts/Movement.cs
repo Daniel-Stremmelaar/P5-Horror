@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
-
+public class Movement : MonoBehaviour
+{
     private float depth;
     public float depthSpeed;
     private float horizontal;
