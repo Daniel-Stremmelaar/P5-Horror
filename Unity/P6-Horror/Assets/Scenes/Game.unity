@@ -2330,6 +2330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactDistance: 2
   interactDisplay: {fileID: 145999190}
+  stalkTimer: 3
+  stalked: 0
 --- !u!1 &547157666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,6 +5737,7 @@ GameObject:
   - component: {fileID: 1930970996}
   - component: {fileID: 1930970995}
   - component: {fileID: 1930970994}
+  - component: {fileID: 1930971000}
   - component: {fileID: 1930970993}
   m_Layer: 0
   m_Name: Cylinder
@@ -5778,6 +5781,7 @@ MonoBehaviour:
   detectionDistance: 12
   detectionAngle: 30
   player: {fileID: 33507760}
+  killDistance: 2
   tempTarget: {fileID: 1796653374139796, guid: 74d1da026ed9ccc4c86daddfcefa4cef, type: 2}
   target: {fileID: 0}
   targetList:
@@ -5862,12 +5866,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930970992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22, y: 0.91, z: 2.41}
+  m_LocalPosition: {x: -22, y: 1.493, z: 2.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1930971000
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930970992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!1 &1946712628
 GameObject:
   m_ObjectHideFlags: 0
