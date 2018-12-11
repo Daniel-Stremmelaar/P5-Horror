@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class EnemyBehavior : MonoBehaviour
 {
-
+    [Header("Player Interaction")]
     public float detectionDistance;
     public float detectionAngle;
     public Transform player;
+    public float killDistance;
     private Vector3 playerDirection;
     private float playerDistance;
     private float playerAngle;
@@ -16,6 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     private bool lost;
     private Vector3 lastKnown;
 
+    [Header("Target Tracking")]
     public GameObject tempTarget;
     public Transform target;
     public List<Transform> targetList = new List<Transform>();
@@ -32,6 +34,7 @@ public class EnemyBehavior : MonoBehaviour
         SelectTarget();
         print(targetList.Count);
         lost = true;
+        GetComponent<SphereCollider>().radius = killDistance;
     }
 
     // Update is called once per frame
@@ -75,6 +78,22 @@ public class EnemyBehavior : MonoBehaviour
                     current = action.scan;
                 }
                 break;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            other.GetComponentInChildren<PlayerInteraction>().stalked = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.GetComponentInChildren<PlayerInteraction>().stalked = false;
         }
     }
 
