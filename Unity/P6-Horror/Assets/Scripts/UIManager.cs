@@ -7,11 +7,13 @@ public class UIManager : MonoBehaviour
 {
     [Header("DeathScreen")]
     public GameObject fadeToBlackOBJ;
-    public Color fateToBlackColor;
-    public float FadeToBlackAmount;
     public GameObject deathScreenOBJ;
-    bool deathBool;
+    public float FadeToBlackAmount;
+    public Color fateToBlackColor;
     public Animator deathPopUp;
+    bool deathBool;
+    //moet de Depyh of field aanpassen in PP //jorrit
+    public GameObject mainCamera;
 
     [Header("PauseMeneu")]
     public GameObject pauseMenu;
@@ -21,8 +23,9 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         deathScreenOBJ.SetActive(false);
+        fadeToBlackOBJ.SetActive(false);
         fateToBlackColor.a = 0f;
-        DeathUI();
+        //DeathUI();
     }
 	
 	// Update is called once per frame
@@ -36,6 +39,8 @@ public class UIManager : MonoBehaviour
         if (deathBool == true)
         {
             FateToBlack();
+            fadeToBlackOBJ.SetActive(true);
+            
         }
     }
 

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Door : Interactable {
 
-    public Vector3 closed;
-    public Vector3 open;
+    private Vector3 closed;
+    private Vector3 open;
+    public float var;
     public float speed;
-    public bool moving;
-    public bool opened;
+    private bool moving;
+    private bool opened;
 
     public override void Interact()
     {
@@ -36,7 +37,7 @@ public class Door : Interactable {
             {
                 transform.Rotate(0,1 * Time.deltaTime * speed,0);
                 print(transform.rotation.eulerAngles.y);
-                if (transform.rotation.eulerAngles.y >= open.y && transform.rotation.eulerAngles.y <= 100)
+                if (transform.rotation.eulerAngles.y >= open.y && transform.rotation.eulerAngles.y <= transform.rotation.eulerAngles.y + var)
                 {
                     opened = true;
                     moving = false;
@@ -46,7 +47,7 @@ public class Door : Interactable {
             {
                 transform.Rotate(0, -1 * Time.deltaTime * speed, 0);
                 print(transform.rotation.eulerAngles.y);
-                if (transform.rotation.eulerAngles.y <= closed.y && transform.rotation.eulerAngles.y >= 100)
+                if (transform.rotation.eulerAngles.y <= closed.y && transform.rotation.eulerAngles.y >= transform.rotation.eulerAngles.y - var)
                 {
                     opened = false;
                     moving = false;
