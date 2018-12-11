@@ -19,6 +19,7 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject tempTarget;
     public Transform target;
     public List<Transform> targetList = new List<Transform>();
+    private List<GameObject> tempTargetList = new List<GameObject>();
     private NavMeshAgent agent;
 
     private enum action { wander, scan, hunt, search };
@@ -56,16 +57,21 @@ public class EnemyBehavior : MonoBehaviour
                 //behavior here
                 if (lost == true)
                 {
+                    target = Instantiate(tempTarget, lastKnown, Quaternion.identity).transform;
+                    tempTargetList.Add(target.gameObject);
                     current = action.search;
                 }
                 break;
 
             case action.search:
                 //behavior here
-                target = Instantiate(tempTarget, lastKnown, Quaternion.identity).transform;
                 agent.destination = target.position;
                 if (transform.position.z == target.position.z && transform.position.x == target.position.x)
                 {
+                    foreach(GameObject g in tempTargetList)
+                    {
+                        Destroy(g);
+                    }
                     current = action.scan;
                 }
                 break;
