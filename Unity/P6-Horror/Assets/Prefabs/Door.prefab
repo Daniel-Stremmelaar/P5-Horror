@@ -23,12 +23,12 @@ GameObject:
   - component: {fileID: 23159603374125698}
   - component: {fileID: 65827027516651584}
   - component: {fileID: 114933614143732054}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4926761724548820
 Transform:
@@ -36,8 +36,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1711306025778864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7153, y: 4.350135e-17, z: -3.9674}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.045, y: 3.6846, z: 6.6834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 7887b6e30dfacd74da1165ba1b0f1389, type: 3}
+  - {fileID: 2100000, guid: efcd722d602232e44b82d8864e11ed06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,4 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   var: 1
   speed: 50
-  direction: 1
+  direction: -1

@@ -23,12 +23,13 @@ GameObject:
   - component: {fileID: 23400234267575852}
   - component: {fileID: 65349629914086164}
   - component: {fileID: 114010803768675020}
-  m_Layer: 0
+  - component: {fileID: 208637328713246468}
+  m_Layer: 10
   m_Name: NormalDoor
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4622483054812224
 Transform:
@@ -58,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1aab1d317b3588640a5ffa005307c20b, type: 3}
+  - {fileID: 2100000, guid: 71ed52967a2c5014ab895976b1fd18b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,3 +112,18 @@ MonoBehaviour:
   var: 1
   speed: 50
   direction: 1
+--- !u!208 &208637328713246468
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1288283437644792}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.09900001, y: 1.3390001, z: 0.55}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.058000002, y: 1.3360001, z: 0.58100003}
+  m_TimeToStationary: 0.5
