@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Door : Interactable {
 
-    public Vector3 closed;
-    public Vector3 open;
+    private Vector3 closed;
+    private Vector3 open;
+    public float var;
     public float speed;
-    public bool moving;
-    public bool opened;
+    public int direction;
+    private bool moving;
+    private bool opened;
 
     public override void Interact()
     {
@@ -21,10 +23,16 @@ public class Door : Interactable {
         closed = transform.rotation.eulerAngles;
         if (closed.y == 0)
         {
-            closed.y = 359;
+            closed.y = 1;
         }
         open = transform.rotation.eulerAngles;
-        open.y += 90;
+        open.y += 90 * direction;
+        print("Open Y " + open.y.ToString());
+        if(open.y < 0)
+        {
+            open.y = 360 + open.y;
+            print("Open Y " + open.y.ToString());
+        }
         opened = false;
     }
 
@@ -34,9 +42,9 @@ public class Door : Interactable {
         {
             if (opened == false)
             {
-                transform.Rotate(0,1 * Time.deltaTime * speed,0);
+                transform.Rotate(0, 1 * direction * Time.deltaTime * speed,0);
                 print(transform.rotation.eulerAngles.y);
-                if (transform.rotation.eulerAngles.y >= open.y && transform.rotation.eulerAngles.y <= 100)
+                if (transform.rotation.eulerAngles.y >= open.y && transform.rotation.eulerAngles.y <= open.y + var)
                 {
                     opened = true;
                     moving = false;
@@ -44,9 +52,9 @@ public class Door : Interactable {
             }
             else
             {
-                transform.Rotate(0, -1 * Time.deltaTime * speed, 0);
+                transform.Rotate(0, -1 * direction * Time.deltaTime * speed, 0);
                 print(transform.rotation.eulerAngles.y);
-                if (transform.rotation.eulerAngles.y <= closed.y && transform.rotation.eulerAngles.y >= 100)
+                if (transform.rotation.eulerAngles.y <= closed.y && transform.rotation.eulerAngles.y >= closed.y - var)
                 {
                     opened = false;
                     moving = false;
