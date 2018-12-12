@@ -23,12 +23,13 @@ GameObject:
   - component: {fileID: 23265242767843600}
   - component: {fileID: 65676922495105676}
   - component: {fileID: 114356473174120770}
-  m_Layer: 0
+  - component: {fileID: 208163458007905486}
+  m_Layer: 10
   m_Name: KitchenDoor
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4662138980962690
 Transform:
@@ -36,8 +37,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1150265393811006}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 31.669, y: 3.6597, z: 2.1096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 29.788, y: 3.6625, z: 1.9956999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,5 +109,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58cfa62ae24df0f408257afe751c5662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  var: 10
+  var: 1
   speed: 50
+  direction: 1
+--- !u!208 &208163458007905486
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150265393811006}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.46800002, y: 1.052, z: 0.068}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.505, y: 1.049, z: 0.056}
+  m_TimeToStationary: 0.5
