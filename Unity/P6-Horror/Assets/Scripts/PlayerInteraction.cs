@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteraction : MonoBehaviour {
-
+public class PlayerInteraction : MonoBehaviour
+{
     private RaycastHit hit;
-    public int interactDistance;
+    public float interactDistance;
     public GameObject interactDisplay;
     public float stalkTimer;
     public bool stalked;
