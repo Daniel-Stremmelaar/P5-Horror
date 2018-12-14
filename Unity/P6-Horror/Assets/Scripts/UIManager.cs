@@ -40,7 +40,6 @@ public class UIManager : MonoBehaviour
         {
             FateToBlack();
             fadeToBlackOBJ.SetActive(true);
-            
         }
     }
 
