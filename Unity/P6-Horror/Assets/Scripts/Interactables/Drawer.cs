@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Drawer : Interactable {
 
-    public Vector3 closed;
-    public Vector3 open;
+    private Vector3 closed;
+    private Vector3 open;
+    public float moveDistance;
     public float speed;
     private bool moving;
     private bool opened;
@@ -20,7 +21,7 @@ public class Drawer : Interactable {
     {
         closed = transform.position;
         open = transform.position;
-        open.z += 1;
+        open.z += moveDistance;
         opened = false;
     }
 

@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         deathScreenOBJ.SetActive(false);
         fadeToBlackOBJ.SetActive(false);
         fateToBlackColor.a = 0f;
-        //DeathUI();
+        DeathUI();
     }
 	
 	// Update is called once per frame
