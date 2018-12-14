@@ -11,14 +11,15 @@ public class Movement : MonoBehaviour
     public float moveSpeedMultiplier;
     public float rotationSpeed;
     private Vector3 translation;
-    private Rigidbody r;
     private Vector3 rotation;
-    public float jumpV;
     public bool airborne;
+
+    //public float jumpV;
+    //private Rigidbody r;
 
 	// Use this for initialization
 	void Start () {
-        r = gameObject.GetComponent<Rigidbody>();
+        //r = gameObject.GetComponent<Rigidbody>();
 	}
 
     private void Update()
@@ -41,10 +42,10 @@ public class Movement : MonoBehaviour
         {
             Move();
         }
-        if (airborne == false && Input.GetButtonDown("Jump"))
+        /*if (airborne == false && Input.GetButtonDown("Jump"))
         {
             Jump();
-        }
+        }*/
         if(Input.GetAxis("Mouse X") != 0)
         {
             Turn();
@@ -69,12 +70,14 @@ public class Movement : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotation.y, 0.0f);
     }
 
+    /*
     private void Jump()
     {
         translation.y = jumpV;
         airborne = true;
         r.velocity = translation;
     }
+    */
 
     private void OnCollisionEnter(Collision collision)
     {

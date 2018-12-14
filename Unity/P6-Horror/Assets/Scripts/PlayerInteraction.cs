@@ -10,6 +10,7 @@ public class PlayerInteraction : MonoBehaviour
     public float stalkTimer;
     public bool stalked;
     private float timeStalked;
+    private int jumpScare;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class PlayerInteraction : MonoBehaviour
             Lost();
         }
         Debug.DrawRay(transform.position, transform.forward * interactDistance);
-		if(Physics.Raycast(transform.position, transform.forward, out hit, interactDistance))
+		if(Physics.Raycast(transform.position, transform.forward, out hit, interactDistance) && Time.timeScale != 0)
         {
             if(hit.transform.gameObject.tag == "Interactable")
             {
@@ -65,7 +66,9 @@ public class PlayerInteraction : MonoBehaviour
         timeStalked += Time.deltaTime;
         if(timeStalked >= stalkTimer)
         {
-            print("game over");
+            jumpScare = Random.Range(0, 2);
+            Time.timeScale = 0;
+            print("game over " + jumpScare.ToString());
         }
     }
 }
