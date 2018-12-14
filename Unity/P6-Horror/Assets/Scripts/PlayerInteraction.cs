@@ -9,6 +9,7 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject interactDisplay;
     public float stalkTimer;
     public bool stalked;
+    public GameObject uiManager;
     private float timeStalked;
     private int jumpScare;
 
@@ -69,6 +70,7 @@ public class PlayerInteraction : MonoBehaviour
             jumpScare = Random.Range(0, 2);
             Time.timeScale = 0;
             print("game over " + jumpScare.ToString());
+            uiManager.GetComponent<UIManager>().DeathUI();
         }
     }
 }
