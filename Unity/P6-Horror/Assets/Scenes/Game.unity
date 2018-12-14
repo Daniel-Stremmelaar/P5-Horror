@@ -1446,6 +1446,146 @@ Prefab:
       propertyPath: interactDisplay
       value: 
       objectReference: {fileID: 1566238023}
+    - target: {fileID: 1909604816790460, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635360932072824, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: displayLightIntensity
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 7.957747
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_UseColorTemperature
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.7397548
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.4666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_ColorTemperature
+      value: 5028
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635360932072824, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: showAdditionalSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114631284217398792, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: viewBiasScale
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635360932072824, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: lightUnit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305622279338712, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845112471051176, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845112471051176, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635360932072824, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_InnerSpotPercent
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 114793220769440088, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114793220769440088, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: flickerMin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114793220769440088, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: flickerMax
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714231020278928, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c711341d93668044a32381c025d17a9, type: 2}
   m_IsPrefabAsset: 0
@@ -6824,7 +6964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1440396101
 Transform:
   m_ObjectHideFlags: 0
