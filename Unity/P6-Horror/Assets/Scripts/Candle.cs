@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Candle : MonoBehaviour {
-
+public class Candle : MonoBehaviour
+{
     public Light light;
     public float flickerMin;
     public float flickerMax;

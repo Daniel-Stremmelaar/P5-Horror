@@ -7,6 +7,7 @@ public class PickUp : Interactable {
     public override void Interact()
     {
         base.Interact();
+        
         Destroy(gameObject);
     }
 }

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drawer : Interactable {
-
+public class Drawer : Interactable
+{
     private Vector3 closed;
     private Vector3 open;
     public float moveDistance;

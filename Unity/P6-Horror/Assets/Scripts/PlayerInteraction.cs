@@ -12,11 +12,13 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject uiManager;
     private float timeStalked;
     private int jumpScare;
+    private GameObject playerOBJ;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        playerOBJ = GameObject.FindWithTag("Player");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -42,6 +44,18 @@ public class PlayerInteraction : MonoBehaviour
             else
             {
                 interactDisplay.SetActive(false);
+            }
+            if (hit.transform.gameObject.tag == "CandleInteract")
+            {
+                if (playerOBJ.GetComponentInChildren<Candle>().wax < 10)
+                {
+                    interactDisplay.SetActive(true);
+                    if (Input.GetKeyDown("e"))
+                    {
+                        playerOBJ.GetComponentInChildren<Candle>().wax = 10;
+                        hit.transform.gameObject.GetComponent<Interactable>().Interact();
+                    }
+                }
             }
         }
         else
