@@ -82,9 +82,14 @@ public class PlayerInteraction : MonoBehaviour
         if(timeStalked >= stalkTimer)
         {
             jumpScare = Random.Range(0, 2);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             print("game over " + jumpScare.ToString());
             uiManager.GetComponent<UIManager>().DeathUI();
+            GetComponentInParent<Movement>().depthSpeed = 0;
+            GetComponentInParent<Movement>().horizontalSpeed = 0;
+            GetComponentInParent<Movement>().rotationSpeed = 0;
+            GetComponent<LookUpDown>().rotSpeed = 0;
+            interactDistance = 0;
         }
     }
 }
