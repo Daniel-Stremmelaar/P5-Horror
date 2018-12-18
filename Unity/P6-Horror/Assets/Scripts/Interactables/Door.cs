@@ -32,11 +32,9 @@ public class Door : Interactable {
         }
         open = transform.rotation.eulerAngles;
         open.y += 90 * direction;
-        print("Open Y " + open.y.ToString());
         if(open.y < 0)
         {
             open.y = 360 + open.y;
-            print("Open Y " + open.y.ToString());
         }
         opened = false;
     }

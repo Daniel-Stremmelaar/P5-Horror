@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72afc06a387bb96409b2a19762c763c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
   number: 0
   doubleNumber: 1
 --- !u!65 &75880726
@@ -2005,6 +2007,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 359364301}
   m_Mesh: {fileID: 4300008, guid: fc1eaef0e1a03334aaea2e3bc4e58a3d, type: 3}
+--- !u!1 &365403741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1032534023465154, guid: 5c711341d93668044a32381c025d17a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1196264780}
+--- !u!114 &365403748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365403741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b09868ccb1a65418346dacba5d8ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 2
+  glowAngle: 30
+  interactables: []
+--- !u!135 &365403749
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365403741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &365571454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1475118469044564, guid: 4ab9fa17b14dad3479ce2f56d2121ee0,
@@ -5894,6 +5927,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114933614143732054, guid: 0e96e2ad9aca6f04aa4b3b122ef4ea81,
+        type: 2}
+      propertyPath: activateTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e96e2ad9aca6f04aa4b3b122ef4ea81, type: 2}
   m_IsPrefabAsset: 0
@@ -6178,7 +6216,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4192140498462134, guid: 5c711341d93668044a32381c025d17a9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 18.45
+      value: 17.985
       objectReference: {fileID: 0}
     - target: {fileID: 4192140498462134, guid: 5c711341d93668044a32381c025d17a9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7513,6 +7551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72afc06a387bb96409b2a19762c763c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
   number: 2
   doubleNumber: -1
 --- !u!65 &1392359396
@@ -8110,6 +8150,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114933614143732054, guid: 0e96e2ad9aca6f04aa4b3b122ef4ea81,
+        type: 2}
+      propertyPath: activateTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e96e2ad9aca6f04aa4b3b122ef4ea81, type: 2}
   m_IsPrefabAsset: 0
@@ -8334,6 +8379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95378553fa4a5d9409b4fc1adead6bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
 --- !u!65 &1466146689
 BoxCollider:
   m_ObjectHideFlags: 0
