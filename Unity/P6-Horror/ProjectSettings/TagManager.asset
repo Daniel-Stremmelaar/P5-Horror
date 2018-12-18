@@ -8,6 +8,7 @@ TagManager:
   - Interactable
   - TempTarget
   - CandleInteract
+  - DoorManager
   layers:
   - Default
   - TransparentFX

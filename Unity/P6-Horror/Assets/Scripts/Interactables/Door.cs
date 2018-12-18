@@ -9,17 +9,22 @@ public class Door : Interactable {
     public float var;
     public float speed;
     public int direction;
+    public bool unlocked;
     private bool moving;
     private bool opened;
 
     public override void Interact()
     {
-        base.Interact();
-        moving = true;
+        if(unlocked == true)
+        {
+            base.Interact();
+            moving = true;
+        }
     }
 
     private void Start()
     {
+        unlocked = false;
         closed = transform.rotation.eulerAngles;
         if (closed.y == 0)
         {
