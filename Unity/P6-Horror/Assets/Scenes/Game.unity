@@ -6260,6 +6260,31 @@ Prefab:
       propertyPath: m_Name
       value: CandleHolderPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 108928212457665744, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611697752231704, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611697752231704, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611697752231704, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611697752231704, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611697752231704, guid: 5c711341d93668044a32381c025d17a9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c711341d93668044a32381c025d17a9, type: 2}
   m_IsPrefabAsset: 0
