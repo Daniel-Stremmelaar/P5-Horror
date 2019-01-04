@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4808248117384622}
   - component: {fileID: 33245051031990432}
   - component: {fileID: 23094999653318034}
+  - component: {fileID: 65165277542099260}
   m_Layer: 0
   m_Name: Bookshelf Big
   m_TagString: Untagged
@@ -34,8 +35,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1717256952555256}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.8, y: 4.407, z: 13.813}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.1450005, y: -0.62699986, z: 8.894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1717256952555256}
   m_Mesh: {fileID: 4300000, guid: 003e4f74e14f06842a59d7c379ed2ed8, type: 3}
+--- !u!65 &65165277542099260
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717256952555256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38113084, y: 3.8285873, z: 5.7398686}
+  m_Center: {x: -0.65903807, y: 1.222176, z: 0.66499376}
