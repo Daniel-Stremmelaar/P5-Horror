@@ -7,7 +7,6 @@ public class TutorialManager : MonoBehaviour
     public GameObject uiManager;
     public GameObject moveSetPopUp;
     public GameObject openLogBookText;
-    public GameObject openLogBook;
     public float waitTime;
     bool b = false;
 
@@ -15,7 +14,6 @@ public class TutorialManager : MonoBehaviour
     {
         moveSetPopUp.SetActive(false);
         openLogBookText.SetActive(false);
-        openLogBook.SetActive(false);
         StartCoroutine(waitTimerTut());
     }
 
@@ -45,7 +43,7 @@ public class TutorialManager : MonoBehaviour
         if (b == true && Input.GetButtonDown("OpenLogBook"))
         {
             Debug.Log("Hello");
-            openLogBook.SetActive(true);
+            uiManager.GetComponent<UIManager>().noteBook.SetActive(true);
             openLogBookText.SetActive(false);
         }
     }

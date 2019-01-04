@@ -32,7 +32,8 @@ public class UIManager : MonoBehaviour
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (Input.GetButtonDown("Cancel"))
         {
             Time.timeScale = 0;
@@ -64,11 +65,11 @@ public class UIManager : MonoBehaviour
 
     public void OpenNoteBook()
     {
-        if (Input.GetButtonDown("OpenLogBook") && noteBook == false)
+        if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == false)
         {
             noteBook.SetActive(true);
-
-        }else if (Input.GetButtonDown("OpenLogBook") && noteBook == true)
+        }
+        if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == true)
         {
             noteBook.SetActive(false);
         }
