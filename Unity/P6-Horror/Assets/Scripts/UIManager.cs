@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
 
     [Header("PauseMeneu")]
     public GameObject pauseMenu;
+    [Header("NoteBook")]
+    public GameObject noteBook;
 
 
     // Use this for initialization
@@ -25,6 +27,7 @@ public class UIManager : MonoBehaviour
         deathScreenOBJ.SetActive(false);
         fadeToBlackOBJ.SetActive(false);
         fateToBlackColor.a = 0f;
+        noteBook.SetActive(false);
         //DeathUI();
     }
 	
@@ -41,6 +44,7 @@ public class UIManager : MonoBehaviour
             FateToBlack();
             fadeToBlackOBJ.SetActive(true);
         }
+        OpenNoteBook();
     }
 
     public void DeathUI()
@@ -55,6 +59,18 @@ public class UIManager : MonoBehaviour
         {
             deathScreenOBJ.SetActive(true);
             deathPopUp.Play("TextAnimation");
+        }
+    }
+
+    public void OpenNoteBook()
+    {
+        if (Input.GetButtonDown("OpenLogBook") && noteBook == false)
+        {
+            noteBook.SetActive(true);
+
+        }else if (Input.GetButtonDown("OpenLogBook") && noteBook == true)
+        {
+            noteBook.SetActive(false);
         }
     }
 }
