@@ -9,6 +9,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject openLogBookText;
     public float waitTime;
     bool b = false;
+    bool bb = true;
 
     private void Start()
     {
@@ -32,18 +33,18 @@ public class TutorialManager : MonoBehaviour
     {
         if (moveSetPopUp == true)
         {
-            if (Input .GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+            if (bb == true && Input.GetButtonDown("Horizontal") || bb == true && Input.GetButtonDown("Vertical"))
             {
                 moveSetPopUp.SetActive(false);
                 openLogBookText.SetActive(true);
                 //mis play animtion
                 b = true;
+                bb = false;
             }
         }
         if (b == true && Input.GetButtonDown("OpenLogBook"))
         {
             Debug.Log("Hello");
-            uiManager.GetComponent<UIManager>().noteBook.SetActive(true);
             openLogBookText.SetActive(false);
         }
     }

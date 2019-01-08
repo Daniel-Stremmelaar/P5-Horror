@@ -70,7 +70,7 @@ public class UIManager : MonoBehaviour
         {
             noteBook.SetActive(true);
         }
-        if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == true)
+        else if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == true)
         {
             noteBook.SetActive(false);
         }
