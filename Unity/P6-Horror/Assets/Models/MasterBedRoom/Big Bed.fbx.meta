@@ -1,14 +1,59 @@
 fileFormatVersion: 2
-guid: 51dafb54503c9304ba59e47bb67a9ef6
+guid: 04d9f69aa6905fc4e867f56c10955188
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube.018
+    100000: Bed
+    100002: //RootNode
+    100004: Blanket
+    100006: Mattress
+    100008: Pillow
+    100010: Pillow.001
+    100012: Pillow.002
+    100014: Pillow.003
+    100016: Pillow.004
+    100018: Pillow.005
+    400000: Bed
+    400002: //RootNode
+    400004: Blanket
+    400006: Mattress
+    400008: Pillow
+    400010: Pillow.001
+    400012: Pillow.002
+    400014: Pillow.003
+    400016: Pillow.004
+    400018: Pillow.005
+    2100000: Material.001
+    2100002: Material
+    2100004: Material.003
+    2100006: Material.002
+    2300000: Bed
+    2300002: Blanket
+    2300004: Mattress
+    2300006: Pillow
+    2300008: Pillow.001
+    2300010: Pillow.002
+    2300012: Pillow.003
+    2300014: Pillow.004
+    2300016: Pillow.005
+    3300000: Bed
+    3300002: Blanket
+    3300004: Mattress
+    3300006: Pillow
+    3300008: Pillow.001
+    3300010: Pillow.002
+    3300012: Pillow.003
+    3300014: Pillow.004
+    3300016: Pillow.005
+    4300000: Mattress
+    4300002: Bed
+    4300004: Pillow
+    4300006: Blanket
+    4300008: Pillow.001
+    4300010: Pillow.002
+    4300012: Pillow.003
+    4300014: Pillow.004
+    4300016: Pillow.005
   externalObjects: {}
   materials:
     importMaterials: 1

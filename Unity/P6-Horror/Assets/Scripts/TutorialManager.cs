@@ -13,20 +13,13 @@ public class TutorialManager : MonoBehaviour
 
     private void Start()
     {
-        moveSetPopUp.SetActive(false);
+        moveSetPopUp.SetActive(true);
         openLogBookText.SetActive(false);
-        StartCoroutine(waitTimerTut());
     }
 
     private void Update()
     {
         TutorialUI();
-    }
-
-    IEnumerator waitTimerTut()
-    {
-        yield return new WaitForSeconds(waitTime);
-        moveSetPopUp.SetActive(true);
     }
 
     public void TutorialUI()

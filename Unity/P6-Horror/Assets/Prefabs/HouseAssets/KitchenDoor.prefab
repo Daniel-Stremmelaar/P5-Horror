@@ -108,6 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58cfa62ae24df0f408257afe751c5662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
   var: 1
   speed: 50
   direction: -1
+  unlocked: 0

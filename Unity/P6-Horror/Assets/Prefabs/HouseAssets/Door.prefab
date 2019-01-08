@@ -9,47 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1288283437644792}
+  m_RootGameObject: {fileID: 1711306025778864}
   m_IsPrefabAsset: 1
---- !u!1 &1288283437644792
+--- !u!1 &1711306025778864
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4622483054812224}
-  - component: {fileID: 33913186578974358}
-  - component: {fileID: 23400234267575852}
-  - component: {fileID: 65349629914086164}
-  - component: {fileID: 114010803768675020}
-  - component: {fileID: 208637328713246468}
+  - component: {fileID: 4926761724548820}
+  - component: {fileID: 33339366149613764}
+  - component: {fileID: 23159603374125698}
+  - component: {fileID: 65827027516651584}
+  - component: {fileID: 114933614143732054}
   m_Layer: 10
-  m_Name: NormalDoor
+  m_Name: Door
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &4622483054812224
+--- !u!4 &4926761724548820
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
+  m_GameObject: {fileID: 1711306025778864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.221, y: 3.6839, z: 10.238}
+  m_LocalPosition: {x: 32.045, y: 3.6846, z: 6.6834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23400234267575852
+--- !u!23 &23159603374125698
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
+  m_GameObject: {fileID: 1711306025778864}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 71ed52967a2c5014ab895976b1fd18b7, type: 2}
+  - {fileID: 2100000, guid: efcd722d602232e44b82d8864e11ed06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,51 +78,39 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33913186578974358
+--- !u!33 &33339366149613764
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
-  m_Mesh: {fileID: 4300000, guid: 1aab1d317b3588640a5ffa005307c20b, type: 3}
---- !u!65 &65349629914086164
+  m_GameObject: {fileID: 1711306025778864}
+  m_Mesh: {fileID: 4300000, guid: 7887b6e30dfacd74da1165ba1b0f1389, type: 3}
+--- !u!65 &65827027516651584
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
+  m_GameObject: {fileID: 1711306025778864}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.19859546, y: 2.6775599, z: 1.0991899}
-  m_Center: {x: -0.05820021, y: 1.3362448, z: 0.58138484}
---- !u!114 &114010803768675020
+  m_Size: {x: 0.1985955, y: 2.6775594, z: 0.9358135}
+  m_Center: {x: -0.041852605, y: 1.3350704, z: 0.5362189}
+--- !u!114 &114933614143732054
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
+  m_GameObject: {fileID: 1711306025778864}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58cfa62ae24df0f408257afe751c5662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
   var: 1
   speed: 50
-  direction: 1
---- !u!208 &208637328713246468
-NavMeshObstacle:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288283437644792}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.09900001, y: 1.3390001, z: 0.55}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.058000002, y: 1.3360001, z: 0.58100003}
-  m_TimeToStationary: 0.5
+  direction: -1
+  unlocked: 0
