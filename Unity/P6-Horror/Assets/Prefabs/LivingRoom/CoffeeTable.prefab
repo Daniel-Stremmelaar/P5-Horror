@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4444078502227784}
   - component: {fileID: 33586588403715314}
   - component: {fileID: 23811416266560204}
+  - component: {fileID: 65342788913797812}
   m_Layer: 0
   m_Name: CoffeeTable
   m_TagString: Untagged
@@ -34,8 +35,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335282217681804}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.639511, y: 4.6599555, z: 6.4062734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.655, y: 2.729672, z: -1.7152753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335282217681804}
   m_Mesh: {fileID: 4300000, guid: 7d10336a2ff312248930bc043c99a867, type: 3}
+--- !u!65 &65342788913797812
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335282217681804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4666233, y: 0.7836882, z: 0.4666233}
+  m_Center: {x: 0.000000014901161, y: -0.5602365, z: 0.000000022351742}
