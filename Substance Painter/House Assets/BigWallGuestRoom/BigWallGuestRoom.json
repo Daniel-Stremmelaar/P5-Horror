@@ -33,7 +33,7 @@
         }
     },
     "texturesets": {
-        "BigWallGuestRoom": {
+        "BigWallGuestroom": {
             "shader": "Main shader"
         }
     }
