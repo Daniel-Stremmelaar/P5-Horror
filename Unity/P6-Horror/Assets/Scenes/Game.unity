@@ -6182,6 +6182,7 @@ Transform:
   - {fileID: 573021126}
   - {fileID: 2076558848}
   - {fileID: 260245478}
+  - {fileID: 1161696557}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6526,6 +6527,61 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 02d834da04dd89042aa9cb052a836e74, type: 3}
+--- !u!1001 &1161696556
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1089308548}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad75d2f36a123764480fe914e2972445, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!4 &1161696557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: ad75d2f36a123764480fe914e2972445,
+    type: 3}
+  m_PrefabInternal: {fileID: 1161696556}
 --- !u!1001 &1170340025
 Prefab:
   m_ObjectHideFlags: 0
