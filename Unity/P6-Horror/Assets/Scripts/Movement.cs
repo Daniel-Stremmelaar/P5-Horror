@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Movement")]
     private float depth;
     public float depthSpeed;
     private float horizontal;
@@ -13,6 +14,10 @@ public class Movement : MonoBehaviour
     private Vector3 translation;
     private Vector3 rotation;
     public bool airborne;
+
+    [Header("Audio")]
+    public AudioClip clip;
+    public AudioSource source;
 
     //public float jumpV;
     //private Rigidbody r;
@@ -62,6 +67,7 @@ public class Movement : MonoBehaviour
             translation.x = horizontal * Time.deltaTime * horizontalSpeed;
         }
         transform.Translate(translation);
+        source.PlayOneShot(clip);
     }
 
     private void Turn()

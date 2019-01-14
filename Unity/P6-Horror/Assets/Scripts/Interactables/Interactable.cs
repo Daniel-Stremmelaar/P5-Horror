@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour {
 
+    [Header ("Interact")]
     private float timer;
     public float activateTime;
     public bool seen;
 
+    [Header ("Audio")]
+    public AudioClip clip;
+    public AudioSource source;
+
 	public virtual void Interact()
     {
         print("interact");
+        source.PlayOneShot(clip);
     }
 
     private void Update()
@@ -24,6 +30,11 @@ public class Interactable : MonoBehaviour {
                 //shader off
                 timer = 0;
             }
+        }
+
+        if(seen == true)
+        {
+            Highlight();
         }
     }
 

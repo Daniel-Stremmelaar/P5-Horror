@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenNoteBook()
     {
-        Debug.Log(noteBook.activeSelf);
+        //Debug.Log(noteBook.activeSelf);
         if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == false)
         {
             noteBook.SetActive(true);

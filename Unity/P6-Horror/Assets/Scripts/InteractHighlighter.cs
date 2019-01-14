@@ -28,12 +28,11 @@ public class InteractHighlighter : MonoBehaviour {
             objectDirection = g.transform.position - transform.position;
             objectDistance = Mathf.Sqrt(Mathf.Pow((g.transform.position.z - transform.position.z), 2) + Mathf.Pow((g.transform.position.x - transform.position.x), 2));
             objectAngle = Vector3.Angle(objectDirection, GetComponentInParent<Transform>().forward);
-            print(objectAngle.ToString());
+            //print(objectAngle.ToString());
             if(objectDistance <= glowDistance && objectAngle <= glowAngle)
             {
                 print("see");
                 g.GetComponent<Interactable>().seen = true;
-                g.GetComponent<Interactable>().Highlight();
             }
             else
             {

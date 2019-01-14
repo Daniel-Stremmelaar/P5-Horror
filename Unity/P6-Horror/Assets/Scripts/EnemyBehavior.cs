@@ -24,12 +24,18 @@ public class EnemyBehavior : MonoBehaviour
     private List<GameObject> tempTargetList = new List<GameObject>();
     private NavMeshAgent agent;
 
+    [Header("Sound")]
+    public AudioClip clip;
+    public AudioSource source;
+    private float volume;
+
     private enum action { wander, scan, hunt, search };
     private action current;
 
     // Use this for initialization
     void Start()
     {
+        volume = source.volume;
         agent = GetComponent<NavMeshAgent>();
         SelectTarget();
         print(targetList.Count);
@@ -40,6 +46,7 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Volume();
         Vision();
         switch (current)
         {
@@ -133,5 +140,10 @@ public class EnemyBehavior : MonoBehaviour
         target = targetList[i];
         agent.destination = target.position;
         current = action.wander;
+    }
+
+    private void Volume()
+    {
+        source.volume = volume / playerDistance;
     }
 }
