@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Key : PickUp {
 
+    [Header("Key info")]
     private DoorManager doorManager;
     public int number;
     public int doubleNumber;

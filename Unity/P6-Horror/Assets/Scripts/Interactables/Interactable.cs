@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour {
 
-    [Header ("Interact")]
+    [Header ("Interact Highlight")]
     private float timer;
     public float activateTime;
     public bool seen;
