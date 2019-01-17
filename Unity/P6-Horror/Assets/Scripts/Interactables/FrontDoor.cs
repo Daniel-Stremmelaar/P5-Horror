@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class FrontDoor : Door {
 
     public Text gameEnd;
-    public UIManager ui;
+    private UIManager ui;
+
+    private void Awake()
+    {
+        ui = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+    }
 
     public override void Interact()
     {

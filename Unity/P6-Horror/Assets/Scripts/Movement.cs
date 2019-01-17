@@ -15,9 +15,15 @@ public class Movement : MonoBehaviour
     private Vector3 rotation;
     public bool airborne;
 
-    [Header("Audio")]
+    [Header("Audio movement")]
     public AudioClip clip;
     public AudioSource source;
+
+    [Header("Audio scared")]
+    public AudioClip breath;
+    public AudioSource breathSource;
+    public AudioClip heart;
+    public AudioSource heartSource;
 
     //public float jumpV;
     //private Rigidbody r;
@@ -66,8 +72,18 @@ public class Movement : MonoBehaviour
             translation.z = depth * Time.deltaTime * depthSpeed;
             translation.x = horizontal * Time.deltaTime * horizontalSpeed;
         }
+
+        //FIX SOUND
+        if(Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
+        {
+            source.PlayOneShot(clip);
+        }
+        else
+        {
+            source.Stop();
+        }
+
         transform.Translate(translation);
-        source.PlayOneShot(clip);
     }
 
     private void Turn()
@@ -92,5 +108,11 @@ public class Movement : MonoBehaviour
             airborne = false;
             translation.y = 0;
         }
+    }
+
+    public void Scared()
+    {
+        breathSource.PlayOneShot(breath);
+        heartSource.PlayOneShot(heart);
     }
 }
