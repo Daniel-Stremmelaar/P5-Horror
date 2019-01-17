@@ -118,6 +118,7 @@ public class EnemyBehavior : MonoBehaviour
                 target = player;
                 agent.destination = player.position;
                 current = action.hunt;
+                Scare();
             }
             else
             {
@@ -145,5 +146,10 @@ public class EnemyBehavior : MonoBehaviour
     private void Volume()
     {
         source.volume = volume / playerDistance;
+    }
+
+    private void Scare()
+    {
+        player.gameObject.GetComponent<Movement>().Scared();
     }
 }
