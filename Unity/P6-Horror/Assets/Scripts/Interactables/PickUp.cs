@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PickUp : Interactable {
 
+    private void Start()
+    {
+        source = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
+    }
+
     public override void Interact()
     {
         base.Interact();
