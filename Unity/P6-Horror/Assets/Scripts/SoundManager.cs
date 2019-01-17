@@ -8,28 +8,14 @@ public class SoundManager : MonoBehaviour {
     public AudioClip bgMusic;
     public AudioSource bgmSource;
 
-    [Header ("Set Interactables")]
+    [Header ("Set PickUp Sound")]
     public AudioClip clip;
-    public AudioSource source;
-
-    // Use this for initialization
-    private void Awake()
-    {
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Interactable"))
-        {
-            if (g.GetComponent<Interactable>() != null)
-            {
-                g.GetComponent<Interactable>().source = g.GetComponent<AudioSource>();
-            }
-        }
-    }
 
     void Start () {
 		foreach (GameObject g in GameObject.FindGameObjectsWithTag("Interactable"))
         {
             if(g.GetComponent<PickUp>() != null)
             {
-                g.GetComponent<PickUp>().source = source;
                 g.GetComponent<PickUp>().clip = clip;
             }
         }
