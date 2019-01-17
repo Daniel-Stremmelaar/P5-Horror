@@ -8,9 +8,11 @@ public class Key : PickUp {
     private DoorManager doorManager;
     public int number;
     public int doubleNumber;
+    public string roomName;
 
 	// Use this for initialization
 	void Start () {
+        source = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
         doorManager = GameObject.FindGameObjectWithTag("DoorManager").GetComponent<DoorManager>();
 	}
 	
@@ -27,6 +29,8 @@ public class Key : PickUp {
         {
             doorManager.Unlock(doubleNumber);
         }
+
+        print("Gained key to " + roomName);
 
         base.Interact();
     }

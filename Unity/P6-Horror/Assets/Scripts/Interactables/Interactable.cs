@@ -13,7 +13,12 @@ public class Interactable : MonoBehaviour {
     public AudioClip clip;
     public AudioSource source;
 
-	public virtual void Interact()
+    private void Awake()
+    {
+        source = this.GetComponent<AudioSource>();
+    }
+
+    public virtual void Interact()
     {
         print("interact");
         source.PlayOneShot(clip);
