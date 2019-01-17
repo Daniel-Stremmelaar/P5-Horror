@@ -19,6 +19,7 @@ AudioMixerController:
   - guids:
     - 6840bdf277f2a2f409b99ddf764049cb
     - 2fa0553fe868f264083d8dec50b35972
+    - 5133bcabd8f00014cb3db97813d41445
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -32,6 +33,7 @@ AudioMixerGroupController:
   m_GroupID: 6840bdf277f2a2f409b99ddf764049cb
   m_Children:
   - {fileID: 243941988326480292}
+  - {fileID: 243621190071372316}
   m_Volume: 1f2bb84fa72cfa64b8081cf85174471f
   m_Pitch: 10a8a3eeb1a66aa478c6f48a15139b2d
   m_Effects:
@@ -63,6 +65,23 @@ AudioMixerSnapshotController:
   m_SnapshotID: 14c5822173c0155448d3a710a9831d00
   m_FloatValues: {}
   m_TransitionOverrides: {}
+--- !u!243 &243621190071372316
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Doors
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 5133bcabd8f00014cb3db97813d41445
+  m_Children: []
+  m_Volume: 052a4c4b370f1264e9d8aa313d98b65b
+  m_Pitch: 31050ceffd8c58c49a626e0f44fe71f2
+  m_Effects:
+  - {fileID: 244466609614368528}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243941988326480292
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -89,6 +108,19 @@ AudioMixerEffectController:
   m_EffectID: c0dd660de8f5bb84f988d359ad1a718a
   m_EffectName: Attenuation
   m_MixLevel: bf27c4759f03c2c469cbc78577ad656c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244466609614368528
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 69d3e25c3211cee428af1c0cf7f834ef
+  m_EffectName: Attenuation
+  m_MixLevel: 056cb7cd96b18d14c9c165c3a9ddd8cc
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
