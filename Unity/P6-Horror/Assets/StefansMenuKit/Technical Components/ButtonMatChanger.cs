@@ -12,20 +12,26 @@ public class ButtonMatChanger : Selectable {
     public Image i;
     private bool selected;
     BaseEventData bED;
+    public Menu menu;
+    public int number;
 	
 	void Update ()
     {
-        if (IsHighlighted(bED))
+        if (IsHighlighted(bED)) //true if mouse is over ui element
         {
             selected = true;
-        }
-        if (selected)
-        {
             i.material = selectedMat;
-            selected = false;
         }
-        else
+        if (selected && Input.GetButtonDown("Fire1"))
         {
+            print("external call");
+            menu.ExternalCall(number);
+            /*i.material = selectedMat;
+            selected = false;*/
+        }
+        if(!IsHighlighted(bED))
+        {
+            selected = false;
             i.material = normalMat;
         }
 	}
