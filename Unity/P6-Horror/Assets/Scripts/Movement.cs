@@ -74,6 +74,7 @@ public class Movement : MonoBehaviour
         }
 
         //FIX SOUND
+        /*
         if(Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
         {
             source.PlayOneShot(clip);
@@ -81,7 +82,7 @@ public class Movement : MonoBehaviour
         else
         {
             source.Stop();
-        }
+        }*/
 
         transform.Translate(translation);
     }
