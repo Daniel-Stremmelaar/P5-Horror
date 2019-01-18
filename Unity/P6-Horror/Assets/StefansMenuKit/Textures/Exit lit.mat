@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Start 1
+  m_Name: Exit lit
   m_Shader: {fileID: 4800000, guid: 92dde5a4c9269c44b88cc07a0c0efe74, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Image:
-        m_Texture: {fileID: 2800000, guid: 31568e169a273494ca89035f60113fd6, type: 3}
+        m_Texture: {fileID: 2800000, guid: a0e33904f81262643862cfe0b2ab0b5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _IridescenceMaskMap:

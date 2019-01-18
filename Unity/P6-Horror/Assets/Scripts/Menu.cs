@@ -62,4 +62,20 @@ public class Menu : MonoBehaviour {
         soundMenu.SetActive(true);
         pauseMenu.SetActive(false);
     }
+
+    public void ExternalCall(int i)
+    {
+        if(i == 1)
+        {
+            SceneManager.LoadScene(1);
+        }
+        if(i == 2)
+        {
+            SceneManager.LoadScene(2);
+        }
+        if(i == 3)
+        {
+            Application.Quit();
+        }
+    }
 }
