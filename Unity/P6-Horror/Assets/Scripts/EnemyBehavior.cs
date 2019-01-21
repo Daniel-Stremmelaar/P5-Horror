@@ -30,7 +30,8 @@ public class EnemyBehavior : MonoBehaviour
     private float volume;
 
     [Header("Animation")]
-    public Animation anim;
+    public Animator anim;
+    public AnimationClip animClip;
 
     private enum action { wander, scan, hunt, search };
     private action current;
@@ -154,5 +155,10 @@ public class EnemyBehavior : MonoBehaviour
     private void Scare()
     {
         player.gameObject.GetComponent<Movement>().Scared();
+    }
+
+    public void KillAnimate()
+    {
+        anim.Play("metarig|Death 1");
     }
 }
