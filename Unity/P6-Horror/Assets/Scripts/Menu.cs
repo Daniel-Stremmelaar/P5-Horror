@@ -65,6 +65,10 @@ public class Menu : MonoBehaviour {
 
     public void ExternalCall(int i)
     {
+        if(i == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
         if(i == 1)
         {
             SceneManager.LoadScene(1);

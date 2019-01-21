@@ -29,6 +29,9 @@ public class EnemyBehavior : MonoBehaviour
     public AudioSource source;
     private float volume;
 
+    [Header("Animation")]
+    public Animation anim;
+
     private enum action { wander, scan, hunt, search };
     private action current;
 
