@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4048992533127540}
   - component: {fileID: 33324557846731050}
   - component: {fileID: 23951536643999186}
+  - component: {fileID: 65881963829303002}
   m_Layer: 0
   m_Name: OfficeDesk
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1047096738001008}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.669779, y: 0.9072876, z: 7.1387663}
+  m_LocalPosition: {x: 14.801, y: 0.9072876, z: 7.1387663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4143483731434064}
@@ -156,3 +157,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934445629269250}
   m_Mesh: {fileID: 4300172, guid: c8a8d4542d5af744d820cc0d6830d038, type: 3}
+--- !u!65 &65881963829303002
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047096738001008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8281393, y: 0.87994325, z: 1.1357813}
+  m_Center: {x: 0.102749765, y: -0.09336746, z: -0.25761178}
