@@ -1,0 +1,17 @@
+moet je ff kijken in unity:
+
+BathroomWallLeft 
+BigWallBack
+
+Nieuwe fbx zowiezo:
+
+GoodDoor
+InsideWallKitchenTest
+InsideWallLivingRoom
+InsideWallMasterBedroom
+InsideWallOfficeGuestRoom {komt nog(zijn problemen met UV)}
+KitchenDoor
+
+waar wss nog nieuwe fbx voor komen:
+BigWindowWall
+(alles waar de wallpaper gefucked is)
