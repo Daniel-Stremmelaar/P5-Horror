@@ -6,48 +6,53 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: LivingRoomChimney
+  m_Name: HouseInsideWallKitchen
   m_Shader: {fileID: 4800000, guid: f026f25b23b189a4f81eac08ac5bb0d3, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - DistortionVectors
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_73477069:
-        m_Texture: {fileID: 2800000, guid: 65ffe09ec3f5e6044a0090a081634300, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8a6614fd7c4dc66459ba5f6fbe253062, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_85FF3D11:
-        m_Texture: {fileID: 2800000, guid: a664b34dd9e81e54db5ff3bf8cca8048, type: 3}
+        m_Texture: {fileID: 2800000, guid: ae0ab6e1ced661740b5dcdd95ac77d4b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_A47CA86D:
-        m_Texture: {fileID: 2800000, guid: 9333d0e9a85f8374c9134d31c818cae6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 42c659af32f6d5d46a8d7473f565da6f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B2D915E:
-        m_Texture: {fileID: 2800000, guid: bb61be5e13a521e45a69c8e41a45b401, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3e05fe5b746124240a3d83ebc3ea0ec4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C6218FD0:
-        m_Texture: {fileID: 2800000, guid: 3bf50de71d226864e8a6dd07afdcd20f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 950ff5596af7b1340915ff4ec46084a0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_F40EF762:
-        m_Texture: {fileID: 2800000, guid: ecfb6390920e5aa409842eb49c43c2d8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 431df792519e7ca4e827b241f6befc4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 92b392978f63772498db0789969c354d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 06241564abf243d4b831c369186eecd5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Albedo2:
-        m_Texture: {fileID: 2800000, guid: 158e54477d734fa4daaaaeb0cbad88e4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 87b51f2e27b7c3e4d8618e0fe08aede7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -55,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e120b42e87fa1de44b1d25ec8f853ab2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -95,15 +100,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e120b42e87fa1de44b1d25ec8f853ab2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b1cf47856f3b3884b93aac43c91e04bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: cad5e078b429b514a8b417fe394ebac2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -135,8 +140,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_126970B5: 0.02
-    - Vector1_C2F7FCC2: 3.55
+    - Vector1_126970B5: 0.0025
+    - Vector1_C2F7FCC2: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -161,16 +166,16 @@ Material:
     - _DisplacementMode: 0
     - _DistortionBlendMode: 0
     - _DistortionBlurBlendMode: 0
-    - _DistortionBlurDstBlend: 0
+    - _DistortionBlurDstBlend: 1
     - _DistortionBlurRemapMax: 1
     - _DistortionBlurRemapMin: 0
     - _DistortionBlurScale: 1
-    - _DistortionBlurSrcBlend: 0
+    - _DistortionBlurSrcBlend: 1
     - _DistortionDepthTest: 1
-    - _DistortionDstBlend: 0
+    - _DistortionDstBlend: 1
     - _DistortionEnable: 0
     - _DistortionScale: 1
-    - _DistortionSrcBlend: 0
+    - _DistortionSrcBlend: 1
     - _DistortionVectorBias: -1
     - _DistortionVectorScale: 2
     - _DoubleSidedEnable: 0
@@ -242,12 +247,12 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
-    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
-    - _ZTestModeDistortion: 8
+    - _ZTestModeDistortion: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_F6FD113E: {r: 0.0627451, g: 2, b: 0, a: 1}
+    - Color_F6FD113E: {r: 2, g: 0.2408377, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
