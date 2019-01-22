@@ -1,16 +1,13 @@
 moet je ff kijken in unity:
 
-BathroomWallLeft 
-BigWallBack
-
 Nieuwe fbx zowiezo:
 
-GoodDoor
-InsideWallKitchenTest
-InsideWallLivingRoom
-InsideWallMasterBedroom
+GoodDoor /Scale
+InsideWallMasterBedroom /tex
 InsideWallOfficeGuestRoom {komt nog(zijn problemen met UV)}
-KitchenDoor
+KitchenDoor /tex??
+//
+BathroomWallLeft 
 
 waar wss nog nieuwe fbx voor komen:
 BigWindowWall
