@@ -30,18 +30,15 @@ public class EnemyBehavior : MonoBehaviour
     private float volume;
 
     [Header("Animation")]
-    private Animator anim;
-    public float time;
-    public float timer;
+    public Animator anim;
+    public AnimationClip animClip;
 
-    public enum action { wander, scan, hunt, search };
-    public action current;
+    private enum action { wander, scan, hunt, search };
+    private action current;
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
-        anim.SetBool("Started", true);
         volume = source.volume;
         agent = GetComponent<NavMeshAgent>();
         SelectTarget();
@@ -59,23 +56,15 @@ public class EnemyBehavior : MonoBehaviour
         {
             case action.wander:
                 //behavior here
-                if ((transform.position.z <= target.position.z + 0.1 || transform.position.z >= target.position.z - 0.1) && (transform.position.x <= target.position.x + 0.1 || transform.position.x >= target.position.x - 0.1))
+                if (transform.position.z == target.position.z && transform.position.x == target.position.x)
                 {
-                    time = timer;
                     current = action.scan;
-                    anim.SetBool("Search", true);
-                    anim.SetBool("Walking", false);
-                    anim.SetBool("Chase", false);
                 }
                 break;
 
             case action.scan:
-                time -= Time.deltaTime;
-                if(time <= 0)
-                {
-                    SelectTarget();
-                }
                 //behavior here
+                SelectTarget();
                 break;
 
             case action.hunt:
@@ -85,26 +74,19 @@ public class EnemyBehavior : MonoBehaviour
                     target = Instantiate(tempTarget, lastKnown, Quaternion.identity).transform;
                     tempTargetList.Add(target.gameObject);
                     current = action.search;
-                    anim.SetBool("Walking", true);
-                    anim.SetBool("Search", false);
-                    anim.SetBool("Chase", false);
                 }
                 break;
 
             case action.search:
                 //behavior here
                 agent.destination = target.position;
-                if ((transform.position.z <= target.position.z + 0.1 || transform.position.z >= target.position.z - 0.1) && (transform.position.x <= target.position.x + 0.1 || transform.position.x >= target.position.x - 0.1))
+                if (transform.position.z == target.position.z && transform.position.x == target.position.x)
                 {
                     foreach(GameObject g in tempTargetList)
                     {
                         Destroy(g);
                     }
-                    time = timer;
                     current = action.scan;
-                    anim.SetBool("Search", true);
-                    anim.SetBool("Walking", false);
-                    anim.SetBool("Chase", false);
                 }
                 break;
         }
@@ -140,9 +122,6 @@ public class EnemyBehavior : MonoBehaviour
                 target = player;
                 agent.destination = player.position;
                 current = action.hunt;
-                anim.SetBool("Chase", true);
-                anim.SetBool("Search", false);
-                anim.SetBool("Walking", false);
                 Scare();
             }
             else
@@ -166,9 +145,6 @@ public class EnemyBehavior : MonoBehaviour
         target = targetList[i];
         agent.destination = target.position;
         current = action.wander;
-        anim.SetBool("Walking", true);
-        anim.SetBool("Search", false);
-        anim.SetBool("Chase", false);
     }
 
     private void Volume()
@@ -179,5 +155,10 @@ public class EnemyBehavior : MonoBehaviour
     private void Scare()
     {
         player.gameObject.GetComponent<Movement>().Scared();
+    }
+
+    public void KillAnimate()
+    {
+        anim.Play("metarig|Death 1");
     }
 }

@@ -9233,16 +9233,6 @@ Prefab:
       propertyPath: targetList.Array.data[6]
       value: 
       objectReference: {fileID: 1552654971}
-    - target: {fileID: 95652497932122544, guid: 19ff7280383826b42a5df079abd2bb8f,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 86e93330937e40347b807f9fdc954022, type: 2}
-    - target: {fileID: 114152760691203948, guid: 19ff7280383826b42a5df079abd2bb8f,
-        type: 2}
-      propertyPath: timer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ff7280383826b42a5df079abd2bb8f, type: 2}
   m_IsPrefabAsset: 0
@@ -14215,7 +14205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2065502819
 RectTransform:
   m_ObjectHideFlags: 0
