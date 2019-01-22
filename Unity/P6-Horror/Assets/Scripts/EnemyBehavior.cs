@@ -30,9 +30,9 @@ public class EnemyBehavior : MonoBehaviour
     private float volume;
 
     [Header("Animation")]
-    public Animator anim;
     public float time;
     public float timer;
+    private Animator anim;
 
     public enum action { wander, scan, hunt, search };
     public action current;
@@ -76,11 +76,11 @@ public class EnemyBehavior : MonoBehaviour
                 if(time <= 0)
                 {
                     SelectTarget();
+                    anim.SetBool("Searching", false);
+                    anim.SetBool("Chasing", false);
+                    anim.SetBool("Walking", true);
+                    current = action.wander;
                 }
-                anim.SetBool("Searching", false);
-                anim.SetBool("Chasing", false);
-                anim.SetBool("Walking", true);
-                current = action.wander;
                 break;
 
             case action.hunt:
