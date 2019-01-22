@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     private Vector3 translation;
     private Vector3 rotation;
     public bool airborne;
+    public bool crouching;
 
     [Header("Audio movement")]
     public AudioClip clip;
@@ -44,6 +45,10 @@ public class Movement : MonoBehaviour
         {
             horizontalSpeed /= moveSpeedMultiplier;
             depthSpeed /= moveSpeedMultiplier;
+        }
+        if (Input.GetButtonDown("Crouching"))
+        {
+            Crouching();
         }
     }
 
@@ -115,5 +120,18 @@ public class Movement : MonoBehaviour
     {
         breathSource.PlayOneShot(breath);
         heartSource.PlayOneShot(heart);
+    }
+
+    void Crouching()
+    {
+        crouching = !crouching;
+        if (crouching == true)
+        {
+            gameObject.transform.localScale -= new Vector3(1, 0.5f, 1);
+        }
+        else
+        {
+            gameObject.transform.localScale += new Vector3(1, 0.5f, 1);
+        }
     }
 }

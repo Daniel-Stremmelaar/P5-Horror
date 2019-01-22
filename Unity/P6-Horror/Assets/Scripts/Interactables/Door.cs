@@ -12,6 +12,8 @@ public class Door : Interactable
     public bool unlocked;
     private bool moving;
     private bool opened;
+    public AudioClip openDoor;
+    public AudioClip closeDoor;
 
     public override void Interact()
     {
@@ -19,6 +21,15 @@ public class Door : Interactable
         {
             base.Interact();
             moving = true;
+            clip = openDoor;
+            Debug.Log(clip);
+        }
+        else
+        {
+            clip = closeDoor;
+            source.PlayOneShot(clip);
+            clip = null;
+            Debug.Log(clip);
         }
     }
 
