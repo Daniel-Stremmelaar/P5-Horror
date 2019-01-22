@@ -181,4 +181,9 @@ public class EnemyBehavior : MonoBehaviour
     {
         player.gameObject.GetComponent<Movement>().Scared();
     }
+
+    public void Kill()
+    {
+        anim.SetInteger("Death", Random.Range(1, 3));
+    }
 }

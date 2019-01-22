@@ -183,6 +183,36 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 945fc0d4d5ce4cf429346173447872a9, type: 2}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: c5ae9be911920cf4b9a8f7d871848183, type: 3}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c05d8b6706cb6464787064a99850a965, type: 2}
   m_IsPrefabAsset: 0
@@ -393,6 +423,21 @@ Prefab:
         type: 2}
       propertyPath: direction
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2948f4cd95d8b63429337e67c0cf0d23, type: 2}
@@ -5517,6 +5562,21 @@ Prefab:
       propertyPath: direction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2901d5fb43ba49345bc793346e64774d, type: 2}
   m_IsPrefabAsset: 0
@@ -8040,7 +8100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &557742836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8244,6 +8304,36 @@ Prefab:
     - target: {fileID: 1711865388243020, guid: c05d8b6706cb6464787064a99850a965, type: 2}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: c5ae9be911920cf4b9a8f7d871848183, type: 3}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82120791436000590, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123629292297848, guid: c05d8b6706cb6464787064a99850a965,
+        type: 2}
+      propertyPath: clip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c05d8b6706cb6464787064a99850a965, type: 2}
@@ -14978,6 +15068,21 @@ Prefab:
       propertyPath: m_Name
       value: DoorMasterBedRoom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82956589067626070, guid: 2901d5fb43ba49345bc793346e64774d,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2901d5fb43ba49345bc793346e64774d, type: 2}
   m_IsPrefabAsset: 0
@@ -15987,7 +16092,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114602285385194780, guid: eea0780e8800bb34dbdc9f8ddc177888,
         type: 2}
       propertyPath: clip
@@ -16002,6 +16107,16 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9d64d9b85191aa540a9699b566aaacfb, type: 2}
+    - target: {fileID: 82984201712995146, guid: eea0780e8800bb34dbdc9f8ddc177888,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82984201712995146, guid: eea0780e8800bb34dbdc9f8ddc177888,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eea0780e8800bb34dbdc9f8ddc177888, type: 2}
   m_IsPrefabAsset: 0
@@ -17743,6 +17858,11 @@ Prefab:
       propertyPath: heartSource
       value: 
       objectReference: {fileID: 1842190165}
+    - target: {fileID: 114326778479415336, guid: 5c711341d93668044a32381c025d17a9,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1628522935}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c711341d93668044a32381c025d17a9, type: 2}
   m_IsPrefabAsset: 0
@@ -17873,6 +17993,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 945fc0d4d5ce4cf429346173447872a9, type: 2}
+    - target: {fileID: 82069545284354222, guid: 9f2c0d6f799602645855c1aaaac6c820,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82069545284354222, guid: 9f2c0d6f799602645855c1aaaac6c820,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82069545284354222, guid: 9f2c0d6f799602645855c1aaaac6c820,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f2c0d6f799602645855c1aaaac6c820, type: 2}
   m_IsPrefabAsset: 0
@@ -18281,6 +18416,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 945fc0d4d5ce4cf429346173447872a9, type: 2}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82704451421401344, guid: 2948f4cd95d8b63429337e67c0cf0d23,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2948f4cd95d8b63429337e67c0cf0d23, type: 2}
   m_IsPrefabAsset: 0
@@ -18753,6 +18903,12 @@ Prefab:
       propertyPath: timer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114152760691203948, guid: 19ff7280383826b42a5df079abd2bb8f,
+        type: 2}
+      propertyPath: tempTarget
+      value: 
+      objectReference: {fileID: 1919575435089584, guid: 74d1da026ed9ccc4c86daddfcefa4cef,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ff7280383826b42a5df079abd2bb8f, type: 2}
   m_IsPrefabAsset: 0
@@ -21317,6 +21473,21 @@ Prefab:
       propertyPath: direction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf85c5c9eaea5149b172091c2dfce09, type: 2}
   m_IsPrefabAsset: 0
@@ -22285,8 +22456,9 @@ AudioSource:
   m_GameObject: {fileID: 1842190159}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243678107317183276, guid: a868d86f03020a542aa9db14319ad984,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 56a2ff31c3cb54449a29cd451de12f6b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -23085,6 +23257,8 @@ MonoBehaviour:
   speed: 0
   direction: 0
   unlocked: 0
+  openDoor: {fileID: 0}
+  closeDoor: {fileID: 0}
 --- !u!64 &1877754052
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23472,6 +23646,21 @@ Prefab:
       propertyPath: direction
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82033064292311066, guid: 8bf85c5c9eaea5149b172091c2dfce09,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf85c5c9eaea5149b172091c2dfce09, type: 2}
   m_IsPrefabAsset: 0
@@ -23733,7 +23922,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114602285385194780, guid: eea0780e8800bb34dbdc9f8ddc177888,
         type: 2}
       propertyPath: clip
@@ -23748,6 +23937,16 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9d64d9b85191aa540a9699b566aaacfb, type: 2}
+    - target: {fileID: 82984201712995146, guid: eea0780e8800bb34dbdc9f8ddc177888,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82984201712995146, guid: eea0780e8800bb34dbdc9f8ddc177888,
+        type: 2}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eea0780e8800bb34dbdc9f8ddc177888, type: 2}
   m_IsPrefabAsset: 0
@@ -24119,7 +24318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2065502819
 RectTransform:
   m_ObjectHideFlags: 0
