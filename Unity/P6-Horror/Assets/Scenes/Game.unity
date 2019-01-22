@@ -18743,6 +18743,16 @@ Prefab:
       propertyPath: targetList.Array.data[6]
       value: 
       objectReference: {fileID: 1552654971}
+    - target: {fileID: 95652497932122544, guid: 19ff7280383826b42a5df079abd2bb8f,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 059cbc22b0afa604080b6acd3b8b7076, type: 2}
+    - target: {fileID: 114152760691203948, guid: 19ff7280383826b42a5df079abd2bb8f,
+        type: 2}
+      propertyPath: timer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ff7280383826b42a5df079abd2bb8f, type: 2}
   m_IsPrefabAsset: 0

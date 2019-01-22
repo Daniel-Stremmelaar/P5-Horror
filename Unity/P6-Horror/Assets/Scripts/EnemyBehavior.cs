@@ -31,17 +31,21 @@ public class EnemyBehavior : MonoBehaviour
 
     [Header("Animation")]
     public Animator anim;
-    public AnimationClip animClip;
+    public float time;
+    public float timer;
 
-    private enum action { wander, scan, hunt, search };
-    private action current;
+    public enum action { wander, scan, hunt, search };
+    public action current;
 
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.SetBool("Started", true);
         volume = source.volume;
         agent = GetComponent<NavMeshAgent>();
         SelectTarget();
+        current = action.wander;
         print(targetList.Count);
         lost = true;
         GetComponent<SphereCollider>().radius = killDistance;
@@ -56,15 +60,27 @@ public class EnemyBehavior : MonoBehaviour
         {
             case action.wander:
                 //behavior here
-                if (transform.position.z == target.position.z && transform.position.x == target.position.x)
+                if ((transform.position.z <= target.position.z + 0.1 && transform.position.z >= target.position.z - 0.1) && (transform.position.x >= target.position.x - 0.1 && transform.position.x <= target.position.x + 0.1))
                 {
+                    time = timer;
+                    anim.SetBool("Searching", true);
+                    anim.SetBool("Chasing", false);
+                    anim.SetBool("Walking", false);
                     current = action.scan;
                 }
                 break;
 
             case action.scan:
                 //behavior here
-                SelectTarget();
+                time -= Time.deltaTime;
+                if(time <= 0)
+                {
+                    SelectTarget();
+                }
+                anim.SetBool("Searching", false);
+                anim.SetBool("Chasing", false);
+                anim.SetBool("Walking", true);
+                current = action.wander;
                 break;
 
             case action.hunt:
@@ -73,6 +89,9 @@ public class EnemyBehavior : MonoBehaviour
                 {
                     target = Instantiate(tempTarget, lastKnown, Quaternion.identity).transform;
                     tempTargetList.Add(target.gameObject);
+                    anim.SetBool("Searching", false);
+                    anim.SetBool("Chasing", false);
+                    anim.SetBool("Walking", true);
                     current = action.search;
                 }
                 break;
@@ -80,12 +99,16 @@ public class EnemyBehavior : MonoBehaviour
             case action.search:
                 //behavior here
                 agent.destination = target.position;
-                if (transform.position.z == target.position.z && transform.position.x == target.position.x)
+                if ((transform.position.z <= target.position.z + 0.1 && transform.position.z >= target.position.z - 0.1) && (transform.position.x >= target.position.x - 0.1 && transform.position.x <= target.position.x + 0.1))
                 {
                     foreach(GameObject g in tempTargetList)
                     {
                         Destroy(g);
                     }
+                    time = timer;
+                    anim.SetBool("Searching", true);
+                    anim.SetBool("Chasing", false);
+                    anim.SetBool("Walking", false);
                     current = action.scan;
                 }
                 break;
@@ -121,6 +144,9 @@ public class EnemyBehavior : MonoBehaviour
                 lost = false;
                 target = player;
                 agent.destination = player.position;
+                anim.SetBool("Searching", false);
+                anim.SetBool("Chasing", true);
+                anim.SetBool("Walking", false);
                 current = action.hunt;
                 Scare();
             }
@@ -144,7 +170,6 @@ public class EnemyBehavior : MonoBehaviour
         int i = Random.Range(0, targetList.Count);
         target = targetList[i];
         agent.destination = target.position;
-        current = action.wander;
     }
 
     private void Volume()
@@ -155,10 +180,5 @@ public class EnemyBehavior : MonoBehaviour
     private void Scare()
     {
         player.gameObject.GetComponent<Movement>().Scared();
-    }
-
-    public void KillAnimate()
-    {
-        anim.Play("metarig|Death 1");
     }
 }

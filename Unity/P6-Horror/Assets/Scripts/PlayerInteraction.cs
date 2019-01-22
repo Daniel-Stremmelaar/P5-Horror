@@ -91,7 +91,6 @@ public class PlayerInteraction : MonoBehaviour
             GetComponentInParent<Movement>().rotationSpeed = 0;
             GetComponent<LookUpDown>().rotSpeed = 0;
             interactDistance = 0;
-            enemy.GetComponent<EnemyBehavior>().KillAnimate();
         }
     }
 }
