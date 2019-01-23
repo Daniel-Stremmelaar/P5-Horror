@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: HouseSecondFloor
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_Shader: {fileID: 4800000, guid: f026f25b23b189a4f81eac08ac5bb0d3, type: 3}
   m_ShaderKeywords: _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
@@ -24,35 +24,35 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_73477069:
-        m_Texture: {fileID: 2800000, guid: 7a3780b1e782f2f4880bd5bf00d21e29, type: 3}
+        m_Texture: {fileID: 2800000, guid: 589a3ca20e5329840998af02d7d3bdb4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_85FF3D11:
-        m_Texture: {fileID: 2800000, guid: 547139ff8c4afb84aa503b884f250a1d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2eb3626e08544634ea66bac72a7f589b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_A47CA86D:
-        m_Texture: {fileID: 2800000, guid: 42e98754afdff484ab6f8e3a7c5e9104, type: 3}
+        m_Texture: {fileID: 2800000, guid: 68a8cdc3753dc324896f1ee5471c2e79, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B2D915E:
-        m_Texture: {fileID: 2800000, guid: 0ab3fa6220159f24d9a935e988707439, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1d63c396450c8e749a820856a911f8be, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_C6218FD0:
-        m_Texture: {fileID: 2800000, guid: f3cbab34aa386284e876816bb744f7cc, type: 3}
+        m_Texture: {fileID: 2800000, guid: d796527881895ec4f958fcf8825585e3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_F40EF762:
-        m_Texture: {fileID: 2800000, guid: 891a5260428467447b0ad70a0c1b628e, type: 3}
+        m_Texture: {fileID: 2800000, guid: af87c892a9fed7b41ad5ec6a76de599e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 1da370a303f298a4c856f601f2052b8d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 341decca78c30f642935422c313dd2c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Albedo2:
-        m_Texture: {fileID: 2800000, guid: 7c93dd1b7ef95064da857e2ffca836ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: 216cc9c314b82ab43b43fdcaf3f6981d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
