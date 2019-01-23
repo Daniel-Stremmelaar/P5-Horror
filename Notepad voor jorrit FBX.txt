@@ -9,6 +9,8 @@ KitchenDoor /tex??
 //
 BathroomWallLeft 
 
+NEW: Window
+
 waar wss nog nieuwe fbx voor komen:
 BigWindowWall
 (alles waar de wallpaper gefucked is)
