@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     public AudioSource breathSource;
     public AudioClip heart;
     public AudioSource heartSource;
+    public float time;
 
     //public float jumpV;
     //private Rigidbody r;
@@ -118,8 +119,19 @@ public class Movement : MonoBehaviour
 
     public void Scared()
     {
-        breathSource.PlayOneShot(breath);
-        heartSource.PlayOneShot(heart);
+        if(breathSource.isPlaying == false)
+        {
+            breathSource.PlayOneShot(breath);
+        }
+        if(heartSource.isPlaying == false)
+        {
+            heartSource.PlayOneShot(heart);
+        }
+    }
+
+    public void StopScared()
+    {
+        StartCoroutine(StopSound());
     }
 
     void Crouching()
@@ -132,6 +144,19 @@ public class Movement : MonoBehaviour
         else
         {
             gameObject.transform.localScale += new Vector3(1, 0.5f, 1);
+        }
+    }
+
+    private IEnumerator StopSound()
+    {
+        yield return new WaitForSeconds(time);
+        if (breathSource.isPlaying == true)
+        {
+            breathSource.Stop();
+        }
+        if (heartSource.isPlaying == true)
+        {
+            heartSource.Stop();
         }
     }
 }

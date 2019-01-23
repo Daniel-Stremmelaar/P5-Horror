@@ -56,4 +56,9 @@ public class InteractHighlighter : MonoBehaviour {
             interactables.Remove(other.gameObject);
         }
     }
+
+    public void RemoveFromList(GameObject g)
+    {
+        interactables.Remove(g);
+    }
 }

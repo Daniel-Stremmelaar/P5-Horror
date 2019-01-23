@@ -113,6 +113,7 @@ public class EnemyBehavior : MonoBehaviour
                 }
                 break;
         }
+        Scare();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -148,7 +149,6 @@ public class EnemyBehavior : MonoBehaviour
                 anim.SetBool("Chasing", true);
                 anim.SetBool("Walking", false);
                 current = action.hunt;
-                Scare();
             }
             else
             {
@@ -179,7 +179,14 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Scare()
     {
-        player.gameObject.GetComponent<Movement>().Scared();
+        if(lost == true)
+        {
+            player.gameObject.GetComponent<Movement>().StopScared();
+        }
+        else
+        {
+            player.gameObject.GetComponent<Movement>().Scared();
+        }
     }
 
     public void Kill()
