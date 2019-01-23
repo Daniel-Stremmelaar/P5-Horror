@@ -6,6 +6,7 @@ public class RoomManager : MonoBehaviour {
 
     [Tooltip("These need to be in the correct order")]
     public List<Room> rooms;
+    public int currentRoom;
 
     public void Start()
     {
@@ -14,11 +15,8 @@ public class RoomManager : MonoBehaviour {
 
     public void RemoveFromList()
     {
-        rooms.Remove(rooms[0]);
-        for (int i = 1; i < rooms.Capacity; i++)
-        {
-            rooms[i--] = rooms[i];
-        }
-        rooms[0].enabled = true;
+        //rooms.Remove(rooms[currentRoom]);
+        currentRoom++;
+        rooms[currentRoom].enabled = true;
     }
 }

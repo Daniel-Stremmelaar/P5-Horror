@@ -43,7 +43,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.357
+    value: 0.38
   smoothness:
     overrideState: 1
     value: 0.499
@@ -161,19 +161,19 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 16
+    value: 1
   threshold:
     overrideState: 1
-    value: 21.77
+    value: 1
   softKnee:
     overrideState: 1
-    value: 1
+    value: 0.53
   clamp:
     overrideState: 1
     value: 65473.2
   diffusion:
     overrideState: 1
-    value: 5.44
+    value: 3.7
   anamorphicRatio:
     overrideState: 0
     value: 0

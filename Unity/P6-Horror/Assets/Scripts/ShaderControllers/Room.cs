@@ -69,8 +69,8 @@ public class Room : MonoBehaviour {
         if(col.tag == "Player")
         {
             Switcheroo();
-            gameObject.GetComponent<BoxCollider>().enabled = false;
             roomManager.RemoveFromList();
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }
