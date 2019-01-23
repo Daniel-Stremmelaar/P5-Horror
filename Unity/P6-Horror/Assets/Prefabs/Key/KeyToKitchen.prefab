@@ -9,45 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1355008307036102}
+  m_RootGameObject: {fileID: 1850966380198630}
   m_IsPrefabAsset: 1
---- !u!1 &1355008307036102
+--- !u!1 &1850966380198630
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4634528699913856}
-  - component: {fileID: 33928158478151048}
-  - component: {fileID: 23867366450401572}
-  - component: {fileID: 64334703430631878}
+  - component: {fileID: 4245024299044632}
+  - component: {fileID: 33032835971618500}
+  - component: {fileID: 23727082195133152}
+  - component: {fileID: 65451704728356000}
+  - component: {fileID: 114175889945663010}
   m_Layer: 0
-  m_Name: Couch
-  m_TagString: Untagged
+  m_Name: KeyToKitchen
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4634528699913856
+--- !u!4 &4245024299044632
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1355008307036102}
-  m_LocalRotation: {x: -0, y: 0.25881907, z: -0, w: 0.9659259}
-  m_LocalPosition: {x: -8.588, y: -6.810283, z: -5.86}
+  m_GameObject: {fileID: 1850966380198630}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.906, y: 5.0142856, z: 11.082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 30.000002, z: 0}
---- !u!23 &23867366450401572
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23727082195133152
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1355008307036102}
+  m_GameObject: {fileID: 1850966380198630}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 0daf65514b481d2439532d60cbbbc960, type: 2}
+  - {fileID: 2100000, guid: dfb9166c09e02a14fb75ced6d39d8798, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,24 +78,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33928158478151048
+--- !u!33 &33032835971618500
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1355008307036102}
-  m_Mesh: {fileID: 4300092, guid: c8a8d4542d5af744d820cc0d6830d038, type: 3}
---- !u!64 &64334703430631878
-MeshCollider:
+  m_GameObject: {fileID: 1850966380198630}
+  m_Mesh: {fileID: 4300000, guid: dfb9166c09e02a14fb75ced6d39d8798, type: 3}
+--- !u!65 &65451704728356000
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1355008307036102}
+  m_GameObject: {fileID: 1850966380198630}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300092, guid: c8a8d4542d5af744d820cc0d6830d038, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.03, z: 0.02}
+  m_Center: {x: -0.0010670071, y: -0.0014621916, z: 5.134035e-10}
+--- !u!114 &114175889945663010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850966380198630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72afc06a387bb96409b2a19762c763c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateTime: 0
+  seen: 0
+  clip: {fileID: 0}
+  source: {fileID: 0}
+  number: 2
+  doubleNumber: 3
+  roomName: Kitchen
