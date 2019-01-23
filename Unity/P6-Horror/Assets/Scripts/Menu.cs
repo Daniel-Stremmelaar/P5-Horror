@@ -55,6 +55,8 @@ public class Menu : MonoBehaviour {
         Time.timeScale = 1;
         soundMenu.SetActive(false);
         pauseMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void SoundOptions()
