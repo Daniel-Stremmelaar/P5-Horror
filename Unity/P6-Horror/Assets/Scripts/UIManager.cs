@@ -28,6 +28,8 @@ public class UIManager : MonoBehaviour
         fadeToBlackOBJ.SetActive(false);
         fateToBlackColor.a = 0f;
         noteBook.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         //DeathUI();
     }
 	
@@ -36,6 +38,8 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
