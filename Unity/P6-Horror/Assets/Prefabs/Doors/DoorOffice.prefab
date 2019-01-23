@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1426952463573784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.466124, y: 0.26959348, z: 2.5179787}
+  m_LocalPosition: {x: 10.478, y: 0.26959, z: 1.0483}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a82473a51ba73e243822181651c0b555, type: 2}
+  - {fileID: 2100000, guid: 945fc0d4d5ce4cf429346173447872a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +85,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1426952463573784}
-  m_Mesh: {fileID: 4300244, guid: c8a8d4542d5af744d820cc0d6830d038, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 6f61e50b9d55b534f9b3b626448e6cd6, type: 3}
 --- !u!64 &64568617376185242
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -99,7 +99,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300244, guid: c8a8d4542d5af744d820cc0d6830d038, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 6f61e50b9d55b534f9b3b626448e6cd6, type: 3}
 --- !u!82 &82704451421401344
 AudioSource:
   m_ObjectHideFlags: 1
@@ -108,9 +108,10 @@ AudioSource:
   m_GameObject: {fileID: 1426952463573784}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 243621190071372316, guid: a868d86f03020a542aa9db14319ad984,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -208,9 +209,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateTime: 0
   seen: 0
-  clip: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
+  clip: {fileID: 0}
   source: {fileID: 0}
-  var: 0
-  speed: 0
-  direction: 0
+  var: 1
+  speed: 50
+  direction: 1
   unlocked: 0
+  openDoor: {fileID: 8300000, guid: c5ae9be911920cf4b9a8f7d871848183, type: 3}
+  closeDoor: {fileID: 8300000, guid: 416a3d974d728bf4998c1020639c61f0, type: 3}
