@@ -3,12 +3,18 @@ guid: 68b2ed243bf438544a61b352422cfaeb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: AA KitchenDoor.001
+    100000: AA KitchenDoorGlass
+    100002: //RootNode
+    400000: AA KitchenDoorGlass
+    400002: //RootNode
+    2100000: Material.007
+    2100002: Material.008
+    2300000: AA KitchenDoorGlass
+    2300002: //RootNode
+    3300000: AA KitchenDoorGlass
+    3300002: //RootNode
+    4300000: AA KitchenDoor
+    4300002: AA KitchenDoorGlass
   externalObjects: {}
   materials:
     importMaterials: 1
