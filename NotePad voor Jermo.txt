@@ -1,0 +1,9 @@
+Big window wall - scale.X en.Y moet +0.17 - texture
+plint - scale.X +0.17
+SmallWallOffice - Scale.X +0.17 en scale.Y +0.17 //windows mee scalen in blender
+Window - texture
+BigWallGuestRoom Scale.Y +0.17 en .Z +0.17
+insideWallOfficeGuestRoom - texture
+insideWallBathRoom - geen fbx (was iets met de kitchenWall)
+floor Scale +0.17
+alle bathroomwalls - geen fbx gevonden
