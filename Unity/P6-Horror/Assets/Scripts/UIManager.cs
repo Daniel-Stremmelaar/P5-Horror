@@ -49,7 +49,10 @@ public class UIManager : MonoBehaviour
             FateToBlack();
             fadeToBlackOBJ.SetActive(true);
         }
-        OpenNoteBook();
+        if (Input.GetButtonDown("OpenLogBook"))
+        {
+            OpenNoteBook();
+        }
     }
 
     public void DeathUI()
@@ -70,13 +73,14 @@ public class UIManager : MonoBehaviour
     public void OpenNoteBook()
     {
         //Debug.Log(noteBook.activeSelf);
-        if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == false)
+        /*if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == false)
         {
             noteBook.SetActive(true);
         }
         else if (Input.GetButtonDown("OpenLogBook") && noteBook.activeSelf == true)
         {
             noteBook.SetActive(false);
-        }
+        }*/
+        noteBook.SetActive(!noteBook.activeSelf);
     }
 }
