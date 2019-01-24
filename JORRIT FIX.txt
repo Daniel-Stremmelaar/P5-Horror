@@ -1,26 +1,33 @@
 op posities waar een light is, is de height map raar vergeleken met andere muren.
 
 carpets - geen texture ( is er wel)
+//WAAR
 typewriter, sidetable en gramophone - geen texture (is er wel)
-living room bijna geen lighting van chandelier.
-upstairs deuren - sommige geen texture
-open haard geen normal map?
+//WAAR
 
+open haard geen normal map? //geen idee how to fix
+
+//later kijken
 sommige props dubbel plaatsen is niet erg, denk aan bijvoorbeeld
 een sidetable die je in de masterbedroom of guestroom kan zetten
 of kijk in de props folder voor zulke dingen.
 
 implementen van interactable objects - hoe ver? (als het er niet is er zijn al textures voor)
+//zit bug in
 windows en enemy - geen opacity
+//niet handig en niet mogelijk met de shader van stefan
 
-BICKWALLBACK - verkeerde texture
-InsideWallBathroom - verkeerde texture
+BICKWALLBACK - verkeerde texture //gefixed
+InsideWallBathroom - verkeerde texture //gefixed????
 
-geen diningroom props? 
+geen diningroom props?
+//geen dining table en dining chairs gevonden
 
-in de hal deur heeft geen texture
 
+//lighting met stefan kijken
 lighting in de hal is raar
+
+living room bijna geen lighting van chandelier.
 
 lighting overall is heel erg intens op de plek waar het cast. dus bij de lamp wat gewoon
 licht moet geven is nu een zon van licht wat je ogen verblind
@@ -28,8 +35,6 @@ licht moet geven is nu een zon van licht wat je ogen verblind
 in de masterbedroom zijn rare groene punten op de Drawer
 
 in de kitchen misschien de lighting ietsjes anders?
-
-geen texture ROOF.
 
 (dit is shit die niet vanavond allemaal hoeft maar wel
 gefixt moet zijn als het project ingeleverd moet worden).
