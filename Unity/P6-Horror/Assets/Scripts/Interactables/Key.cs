@@ -33,10 +33,17 @@ public class Key : PickUp {
         {
             doorManager.Unlock(doubleNumber);
         }
-        room.text = "Obtained " + roomName;
+        room.text = "Obtained key to " + roomName;
         r.SetActive(true);
+        StartCoroutine(WaitTimer());
         print("Gained key to " + roomName);
 
         base.Interact();
+    }
+
+    IEnumerator WaitTimer()
+    {
+        yield return new WaitForSeconds(1);
+        r.SetActive(false);
     }
 }
