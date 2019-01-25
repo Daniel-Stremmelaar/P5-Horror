@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NotebookManager : MonoBehaviour {
     [TextArea] public List<string> notebooks = new List<string>();
     public List<bool> found = new List<bool>();
     //public List<Font> fonts = new List<Font>();
-    public Font f;
-    public Text text;
+    public TMP_FontAsset f;
+    public TMP_Text text;
     public List<string> months = new List<string>();
     private int i;
     private int n;
@@ -72,7 +73,6 @@ public class NotebookManager : MonoBehaviour {
     public void SetFont()
     {
         text.font = f;
-        text.fontStyle = FontStyle.BoldAndItalic;
     }
 
     public void SetDate()
