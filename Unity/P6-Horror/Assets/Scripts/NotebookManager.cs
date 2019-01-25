@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class NotebookManager : MonoBehaviour {
     [TextArea] public List<string> notebooks = new List<string>();
-    public List<Font> fonts = new List<Font>();
+    public List<bool> found = new List<bool>();
+    //public List<Font> fonts = new List<Font>();
+    public Font f;
     public Text text;
     public List<string> months = new List<string>();
     private int i;
@@ -13,25 +15,38 @@ public class NotebookManager : MonoBehaviour {
     private string s;
     private int day;
     private int correction;
+    private bool show;
 
 	// Use this for initialization
 	void Start () {
         i = 0;
+        text.text = "...";
+        SetFont();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Jump"))
         {
-            i++;
-            if(i > notebooks.Count-1)
+            foreach(bool b in found)
             {
-                i = 0;
+                if(b == true)
+                {
+                    show = true;
+                }
             }
-            SetText(i);
-            SetFont(n);
+            if(show == true)
+            {
+                i++;
+                if (i > notebooks.Count - 1)
+                {
+                    i = 0;
+                }
+                SetText(i);
+                SetFont();
+            }
         }
-        if (Input.GetButtonDown("Submit"))
+        /*if (Input.GetButtonDown("Submit"))
         {
             n++;
             if(n > fonts.Count - 1)
@@ -39,21 +54,24 @@ public class NotebookManager : MonoBehaviour {
                 n = 0;
             }
             SetFont(n);
-        }
+        }*/
 	}
 
     public void SetText(int i)
     {
-        text.text = notebooks[i];
-        if(i == 9)
+        if(found[i] == true)
         {
-            SetDate();
+            text.text = notebooks[i];
+            if (i == 9)
+            {
+                SetDate();
+            }
         }
     }
 
-    public void SetFont(int n)
+    public void SetFont()
     {
-        text.font = fonts[n];
+        text.font = f;
         text.fontStyle = FontStyle.BoldAndItalic;
     }
 

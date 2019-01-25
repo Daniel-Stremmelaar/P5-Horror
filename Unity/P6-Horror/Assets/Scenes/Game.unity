@@ -2645,10 +2645,8 @@ MonoBehaviour:
     Mother won\u2019t rest until it is right. You won\u2019t rest until it is right.
     No one will rest until it is right. Make it right. All must be right. Must make
     it right.\r\n"
-  fonts:
-  - {fileID: 12800000, guid: 5120d37e46cbd6e41b2bf5f1d9ee6fe3, type: 3}
-  - {fileID: 12800000, guid: 53360b8834fd2124e8c8cf34e39da4fc, type: 3}
-  - {fileID: 12800000, guid: 01e1ec66d9c1a1747a9d750e474cdc0f, type: 3}
+  found: 00000000000000000000
+  f: {fileID: 12800000, guid: 01e1ec66d9c1a1747a9d750e474cdc0f, type: 3}
   text: {fileID: 2038230259}
   months:
   - January
