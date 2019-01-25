@@ -5,6 +5,7 @@ using UnityEngine;
 public class Room : MonoBehaviour {
 
     public MeshRenderer[] meshRenderers;
+    [Range(0,1)]
     public float transitionValue;
     public float targetValue;
     public bool oldTimes;
@@ -36,12 +37,14 @@ public class Room : MonoBehaviour {
             if (transitionValue > targetValue)
             {
                 transitionValue -= transitionSpeed*Time.deltaTime;
+                transitionValue = Mathf.Clamp(transitionValue, 0, 1);
             }
             else
             {
                 if (transitionValue < targetValue)
                 {
                     transitionValue += transitionSpeed * Time.deltaTime;
+                    transitionValue = Mathf.Clamp(transitionValue, 0, 1);
                 }
             }
         }
@@ -55,7 +58,7 @@ public class Room : MonoBehaviour {
     public void BecomeOld()
     {
         oldTimes = true;
-        targetValue = 2;
+        targetValue = 1;
     }
 
     public void BecomeNew()
