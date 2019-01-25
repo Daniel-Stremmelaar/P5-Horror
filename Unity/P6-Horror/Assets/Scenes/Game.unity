@@ -13629,6 +13629,11 @@ Prefab:
       propertyPath: notebooks
       value: 
       objectReference: {fileID: 275525109}
+    - target: {fileID: 23479497442916166, guid: b1175a4c167389443b8e3653e697feab,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f8259129a63f5234b9d35f631d17a325, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1175a4c167389443b8e3653e697feab, type: 2}
   m_IsPrefabAsset: 0
