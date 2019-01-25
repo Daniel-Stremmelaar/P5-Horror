@@ -1,9 +1,7 @@
 op posities waar een light is, is de height map raar vergeleken met andere muren.
 
-carpets - geen texture ( is er wel)
-//WAAR
 typewriter, sidetable en gramophone - geen texture (is er wel)
-//RUG
+//Waar
 
 open haard geen normal map? //geen idee how to fix
 

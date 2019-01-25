@@ -19,7 +19,8 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenu;
     [Header("NoteBook")]
     public GameObject noteBook;
-
+    [Header("Other")]
+    public GameObject r;
 
     // Use this for initialization
     void Start()
@@ -82,5 +83,12 @@ public class UIManager : MonoBehaviour
             noteBook.SetActive(false);
         }*/
         noteBook.SetActive(!noteBook.activeSelf);
+    }
+
+    public IEnumerator WaitTimer()
+    {
+        print("corout");
+        yield return new WaitForSeconds(1);
+        r.SetActive(false);
     }
 }
