@@ -13371,66 +13371,66 @@ Prefab:
     - target: {fileID: 108882535075031726, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_ColorTemperature
-      value: 3356
+      value: 4147
       objectReference: {fileID: 0}
     - target: {fileID: 108980840122760660, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_ColorTemperature
-      value: 3356
+      value: 4147
       objectReference: {fileID: 0}
     - target: {fileID: 114661506216865388, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: displayLightIntensity
-      value: 25
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 114048438351833130, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: displayLightIntensity
-      value: 25
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 108882535075031726, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_Intensity
-      value: 1.9894367
+      value: 19.894367
       objectReference: {fileID: 0}
     - target: {fileID: 108980840122760660, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_Intensity
-      value: 1.9894367
+      value: 19.894367
       objectReference: {fileID: 0}
     - target: {fileID: 108882535075031726, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_Range
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4186675884118438, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4186675884118438, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4186675884118438, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4567170380658778, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4567170380658778, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4567170380658778, guid: 08ed58956b746854d940ca4cbeeaf188, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 108980840122760660, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
       propertyPath: m_Range
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 108882535075031726, guid: 08ed58956b746854d940ca4cbeeaf188,
         type: 2}
@@ -29298,9 +29298,9 @@ Transform:
   - {fileID: 1766622223}
   - {fileID: 439587231}
   - {fileID: 555339051}
-  - {fileID: 1350075407}
-  - {fileID: 1438376835}
   - {fileID: 137412665}
+  - {fileID: 1438376835}
+  - {fileID: 1350075407}
   - {fileID: 1828082383}
   m_Father: {fileID: 0}
   m_RootOrder: 32
@@ -31243,14 +31243,15 @@ Prefab:
       propertyPath: m_Name
       value: Wall Lamp (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4521094521765920, guid: 140af1ebab31fdd48b60b97ff95cf148, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114800674298866830, guid: 140af1ebab31fdd48b60b97ff95cf148,
+    - target: {fileID: 114636139437754764, guid: 140af1ebab31fdd48b60b97ff95cf148,
         type: 2}
-      propertyPath: shadowDimmer
-      value: 1
+      propertyPath: displayLightIntensity
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 108394598468977254, guid: 140af1ebab31fdd48b60b97ff95cf148,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 1.5915494
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 140af1ebab31fdd48b60b97ff95cf148, type: 2}
@@ -32574,7 +32575,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1661115121
 Transform:
@@ -33669,7 +33670,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1793813116
 Transform:
@@ -36049,7 +36050,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1974509787
 Transform:
