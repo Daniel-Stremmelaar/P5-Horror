@@ -32,7 +32,7 @@ public class Drawer : Interactable
             if(opened == false)
             {
                 transform.Translate(transform.forward * Time.deltaTime * speed);
-                if(transform.position == open)
+                if(transform.position.z >= open.z)
                 {
                     opened = true;
                     moving = false;
@@ -41,7 +41,7 @@ public class Drawer : Interactable
             else
             {
                 transform.Translate(-transform.forward * Time.deltaTime * speed);
-                if (transform.position == closed)
+                if (transform.position.z <= closed.z)
                 {
                     opened = false;
                     moving = false;

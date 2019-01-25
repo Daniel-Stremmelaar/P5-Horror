@@ -35,15 +35,9 @@ public class Key : PickUp {
         }
         room.text = "Obtained key to " + roomName;
         r.SetActive(true);
-        StartCoroutine(WaitTimer());
+        GameObject.FindWithTag("UIManager").GetComponent<UIManager>().StartCoroutine(GameObject.FindWithTag("UIManager").GetComponent<UIManager>().WaitTimer());
         print("Gained key to " + roomName);
 
         base.Interact();
-    }
-
-    IEnumerator WaitTimer()
-    {
-        yield return new WaitForSeconds(1);
-        r.SetActive(false);
     }
 }
