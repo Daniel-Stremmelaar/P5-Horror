@@ -3,7 +3,7 @@ op posities waar een light is, is de height map raar vergeleken met andere muren
 carpets - geen texture ( is er wel)
 //WAAR
 typewriter, sidetable en gramophone - geen texture (is er wel)
-//WAAR
+//RUG
 
 open haard geen normal map? //geen idee how to fix
 
@@ -14,8 +14,8 @@ of kijk in de props folder voor zulke dingen.
 
 implementen van interactable objects - hoe ver? (als het er niet is er zijn al textures voor)
 //zit bug in
-windows en enemy - geen opacity
-//niet handig en niet mogelijk met de shader van stefan
+enemy - geen opacity
+//kijken
 
 BICKWALLBACK - verkeerde texture //gefixed
 InsideWallBathroom - verkeerde texture //gefixed????
