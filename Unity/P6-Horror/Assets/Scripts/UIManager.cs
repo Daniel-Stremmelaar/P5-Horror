@@ -58,6 +58,8 @@ public class UIManager : MonoBehaviour
 
     public void DeathUI()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         deathBool = true;
     }
     public void FateToBlack()
